@@ -1,0 +1,17 @@
+header a, header p, header li,
+body footer a, body footer p, body footer li, body footer h4 {
+	font-family: $font-family-open-sans;
+}
+	
+section {
+	p, a, span,
+	h1, h2, h3, h4, h5 {
+		font-family: $font-family-open-sans;
+	}
+}
+
+.x-content {
+	&.wide {
+		max-width: 72.5rem;
+	}
+}

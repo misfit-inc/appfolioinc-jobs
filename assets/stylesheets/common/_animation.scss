@@ -1,0 +1,170 @@
+.transition-delay-100 {
+	@include transition-delay(.1s);
+}
+
+.transition-delay-200 {
+	@include transition-delay(.2s);
+}
+
+.transition-delay-300 {
+	@include transition-delay(.3s);
+}
+
+.transition-delay-400 {
+	@include transition-delay(.4s);
+}
+
+.transition-delay-500 {
+	@include transition-delay(.5s);
+}
+
+.transition-delay-600 {
+	@include transition-delay(.6s);
+}
+
+.transition-delay-700 {
+	@include transition-delay(.7s);
+}
+
+.transition-delay-800 {
+	@include transition-delay(.8s);
+}
+
+.transition-delay-900 {
+	@include transition-delay(.9s);
+}
+
+.transition-delay-1000 {
+	@include transition-delay(1s);
+}
+
+.transition-delay-1100 {
+	@include transition-delay(1.1s);
+}
+
+.transition-delay-1200 {
+	@include transition-delay(1.2s);
+}
+
+.transition-delay-1300 {
+	@include transition-delay(1.3s);
+}
+
+.transition-delay-1400 {
+	@include transition-delay(1.4s);
+}
+
+.transition-delay-1500 {
+	@include transition-delay(1.5s);
+}
+
+.transition-delay-1600 {
+	@include transition-delay(1.6s);
+}
+
+.transition-delay-1700 {
+	@include transition-delay(1.7s);
+}
+
+.transition-delay-1800 {
+	@include transition-delay(1.8s);
+}
+
+.transition-delay-1900 {
+	@include transition-delay(1.9s);
+}
+
+.transition-delay-2000 {
+	@include transition-delay(2s);
+}
+
+.transition-delay-2100 {
+	@include transition-delay(2.1s);
+}
+
+.transition-delay-2200 {
+	@include transition-delay(2.2s);
+}
+
+.transition-delay-2400 {
+	@include transition-delay(2.4s);
+}
+
+.transition-delay-2600 {
+	@include transition-delay(2.6s);
+}
+
+.transition-delay-3000 {
+	@include transition-delay(3s);
+}
+
+.anim-fadein {
+	opacity: 0;
+	&.mui-enter-active {
+		opacity: 1;
+	}
+}
+
+.anim-left-right {
+	position: relative;
+	right: 4.5rem;
+
+	@include transition(right .4s ease);
+
+	&.fade-in {
+		@include transition(right .4s ease);
+	}
+
+	&.mui-enter-active {
+		right: 0;
+	}
+}
+
+.anim-right-left {
+	position: relative;
+	left: 4.5rem;
+
+	@include transition(left .4s ease);
+
+	&.fade-in {
+		@include transition(left .4s ease);
+	}
+
+	&.mui-enter-active {
+		left: 0;
+	}
+}
+
+.anim-top-bottom {
+	position: relative;
+	bottom: 4.5rem;
+
+	@include transition(bottom .4s ease);
+
+	&.fade-in {
+		@include transition(bottom .4s ease);
+	}
+
+	&.mui-enter-active {
+		bottom: 0;
+	}
+}
+
+.anim-bottom-top {
+	position: relative;
+	top: 4.5rem;
+
+	@include transition(top .4s ease);
+
+	&.fade-in{
+		@include transition(top .4s ease);
+	}
+
+	&.mui-enter-active {
+		top: 0;
+	}
+}
+
+.fade-in.mui-enter-active {
+	transition-timing-function: ease;
+}

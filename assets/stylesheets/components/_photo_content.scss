@@ -1,0 +1,90 @@
+.photo-content {
+	margin-bottom: 10rem;
+	overflow: hidden;
+
+	@media #{$small-only} {
+		margin-bottom: 4rem;
+	}
+
+	@media #{$medium-up} {
+		margin-bottom: 6rem;
+	}
+
+	@media #{$large-up} {
+		margin-bottom: 8rem;
+	}
+
+	@media #{$xlarge-up} {
+		margin-bottom: 10rem;
+	}
+
+	.segment {
+		display: flex;
+
+		@media #{$small-only} {
+			display: block;
+		}
+
+		& > div {
+			align-self: center;
+		}
+
+		h3 {
+			font-size: rem-calc(33);
+			font-weight: 300;
+		}
+
+		h4 {
+			font-size: rem-calc(24);
+			font-weight: bold;
+			margin-bottom: 0.3rem;
+		}
+
+		p {
+
+			font-weight: 300;
+		}
+
+		.color-blue {
+			color: $color-blue;
+		}
+
+		.color-purple {
+			color: $color-purple;
+		}
+
+		.color-orange {
+			color: $color-orange;
+		}
+
+		.color-red {
+			color: $color-red;
+		}
+
+		.happiness-step-icon svg {
+			width: auto !important;
+			height: auto !important;
+		}
+
+		.happiness-step-2,
+		.happiness-step-4 {
+			margin-top: -2rem;
+		}
+
+		.align-right {
+			text-align: right;
+		}
+	}
+
+	.connector {
+		margin: 3rem auto;
+
+		@media #{$small-only} {
+			display: none;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+}

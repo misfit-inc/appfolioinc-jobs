@@ -1,0 +1,70 @@
+.hero {
+
+	&.hero-microsite {
+		height: 38rem;
+		position: relative;
+		text-align: left;
+
+		.hero-heading {
+			color: #fff;
+			font-size: 5rem;
+			text-shadow: none;
+
+			@media #{$small-only} {
+				font-size: 3rem;
+			}
+
+			@media #{$medium-up} {
+				font-size: 4rem;
+			}
+		}
+
+		img {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&-bar {
+		background-color: #009de6;
+		bottom: 0;
+		padding: 1rem 0;
+		position: absolute;
+		width: 100%;
+
+		&-text {
+			align-self: center;
+			color: #fff;
+			font-size: 1rem;
+			margin-bottom: 0;
+
+			strong {
+				font-weight: 600;
+			}
+
+			a,
+			a:visited {
+				border-bottom: 1px solid #fff;
+				color: #fff;
+				font-size: rem-calc(15);
+				margin-left: 1.5rem;
+				padding-bottom: .2rem;
+				position: relative;
+				top: -0.2rem;
+
+				@include transition(border-bottom-color .3s ease);
+
+				&:hover {
+					border-bottom-color: transparent;
+					font-size: rem-calc(15);
+					text-decoration: none;
+				}
+
+				@media #{$small-only} {
+					clear: both;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+}

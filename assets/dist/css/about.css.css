@@ -1,0 +1,420 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+#about_controller .about {
+  /* Large screens */
+  /* Medium only */
+  /* Small screens */
+  /* Small screens */
+  /* Medium only */
+  /* Custom medium */
+  /* Custom medium */
+  /* Misc sizes */
+  /* Large screens */
+  /* Custom large */
+  /* Custom large */ }
+  #about_controller .about header {
+    height: 625px;
+    margin: 0 0 95px; }
+    #about_controller .about header .g_btn {
+      margin: 0 auto; }
+  #about_controller .about h2 {
+    color: #fff;
+    font-size: 2.2em;
+    /* 35px */
+    font-weight: 400;
+    text-shadow: 1px 1px 2px #666; }
+  #about_controller .about h3 {
+    color: #3c4650;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1; }
+  #about_controller .about h4 {
+    color: #008d80;
+    font-size: 36px;
+    font-weight: 300; }
+  #about_controller .about h5 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2; }
+  #about_controller .about h6 {
+    color: #008a80;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 3px; }
+  #about_controller .about p {
+    font-size: 18px; }
+  @media only screen and (min-width: 64.063em) {
+    #about_controller .about .hero {
+      background-image: url("https://learn.appfolio.com/apm/assets/about-page-hero-image-large-1500x970.jpg"); } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #about_controller .about .hero {
+      background-image: url("https://learn.appfolio.com/apm/assets/about-page-hero-image-medium-1020x970.jpg"); } }
+  @media screen and (max-width: 39.9375em) {
+    #about_controller .about .hero {
+      background-image: url("https://learn.appfolio.com/apm/assets/about-page-hero-image-small-640x450.jpg");
+      height: 450px; }
+    #about_controller .about h4 {
+      font-size: 1.9rem;
+      line-height: 1.2; } }
+  #about_controller .about h1 {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 800;
+    margin: 0 0 20px; }
+  #about_controller .about h2 {
+    color: #fff;
+    font-size: 2.2em;
+    /* 35px */
+    font-weight: 400; }
+  #about_controller .about h3 {
+    color: #3c4650;
+    font-size: 50px;
+    font-weight: 800; }
+  #about_controller .about h5 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700; }
+  #about_controller .about h6 {
+    color: #008a80;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 3px; }
+  #about_controller .about p {
+    font-size: 18px; }
+  #about_controller .about .wistia_embed {
+    height: 551px;
+    width: 980px; }
+  #about_controller .about #about-hero-video {
+    margin-bottom: 70px;
+    width: 100%;
+    background-color: #000; }
+  #about_controller .about .team div {
+    height: 468px; }
+  #about_controller .about .team a {
+    display: block;
+    margin: 30px auto;
+    text-align: center; }
+  #about_controller .about .team a:hover {
+    text-decoration: none; }
+  #about_controller .about .team p {
+    color: #3c4650;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0; }
+  #about_controller .about .team img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 220px;
+    height: 330px; }
+  #about_controller .about h3#firstModalTitle {
+    margin-top: 0; }
+  #about_controller .about .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    display: none;
+    height: 255px;
+    left: 0;
+    margin-left: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 216px; }
+  #about_controller .about .timeline {
+    background-color: #313e48;
+    margin-top: 110px;
+    position: relative;
+    width: 100%;
+    height: 465px; }
+    #about_controller .about .timeline h6, #about_controller .about .timeline p {
+      color: #fff; }
+    #about_controller .about .timeline .owl-theme .owl-controls {
+      margin-top: 0;
+      text-align: center; }
+      #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons .owl-prev {
+        background: url("https://learn.appfolio.com/apm/assets/timeline-arrows-sprite.png") no-repeat -6px -9px;
+        color: transparent;
+        left: 20px; }
+      #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons .owl-next {
+        background: url("https://learn.appfolio.com/apm/assets/timeline-arrows-sprite.png") no-repeat -67px -10px;
+        color: transparent;
+        right: 20px; }
+      #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons div {
+        cursor: pointer;
+        display: inline-block;
+        zoom: 1;
+        margin: 0;
+        padding: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0;
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+        position: absolute;
+        top: 171px;
+        width: 40px;
+        height: 127px; }
+    #about_controller .about .timeline .slide {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: 465px; }
+      #about_controller .about .timeline .slide div {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        height: 465px; }
+        #about_controller .about .timeline .slide div p {
+          margin-bottom: 0; }
+  #about_controller .about .values {
+    background-color: #00ae9b;
+    padding: 145px 0 115px;
+    width: 100%; }
+    #about_controller .about .values h3 {
+      color: #fff;
+      font-size: 36px; }
+    #about_controller .about .values h4.according {
+      color: #fff;
+      cursor: pointer;
+      font-size: 36px;
+      line-height: 1.1;
+      margin: 25px 0 10px;
+      position: relative;
+      transition: 0.4s; }
+      #about_controller .about .values h4.according span {
+        background: url("https://learn.appfolio.com/apm/assets/plus_minus_sprite.gif") no-repeat -66px -15px;
+        float: left;
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+        width: 30px;
+        height: 30px; }
+    #about_controller .about .values h4.according.simpler span {
+      margin-bottom: 0; }
+    #about_controller .about .values h4.according.active span {
+      background: url("https://learn.appfolio.com/apm/assets/plus_minus_sprite.gif") no-repeat -18px -15px; }
+    #about_controller .about .values p {
+      color: #fff;
+      margin-left: 42px; }
+    #about_controller .about .values hr {
+      border-bottom: solid 4px #fff;
+      margin: 40px 0;
+      max-width: 75px;
+      width: 75px; }
+    #about_controller .about .values .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out; }
+  #about_controller .about .hack {
+    background: url("https://learn.appfolio.com/apm/assets/hack-day-1500x844.jpg") no-repeat center center/cover;
+    display: block;
+    width: 100%;
+    height: 385px; }
+  @media screen and (max-width: 39.9375em) {
+    #about_controller .about .hero {
+      margin-bottom: 70px; }
+      #about_controller .about .hero h1 {
+        font-size: 2.9em; }
+    #about_controller .about .values {
+      padding: 80px 0; }
+      #about_controller .about .values h4.according {
+        font-size: 30px; }
+      #about_controller .about .values h4.according span {
+        margin-bottom: 45px; }
+      #about_controller .about .values p {
+        margin-left: 40px; }
+    #about_controller .about .timeline {
+      height: 465px;
+      margin-top: 55px; }
+      #about_controller .about .timeline h5 {
+        font-size: 24px;
+        line-height: 1.15;
+        margin-bottom: 5px; }
+      #about_controller .about .timeline p {
+        font-size: 15px;
+        line-height: 1.4; }
+      #about_controller .about .timeline .slide {
+        background-position: top center; }
+        #about_controller .about .timeline .slide div {
+          margin-top: 45%;
+          padding: 0 2% 0 4%;
+          display: block;
+          height: auto; }
+    #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons div {
+      top: 61px;
+      width: 21px;
+      height: 85px; }
+    #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons .owl-prev {
+      background-position: -162px -30px;
+      left: 5px; }
+    #about_controller .about .timeline .owl-theme .owl-controls .owl-buttons .owl-next {
+      background-position: -198px -30px;
+      right: 5px; }
+    #about_controller .about .t-2006 {
+      background-image: url("//learn.appfolio.com/apm/assets/01-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2007 {
+      background-image: url("//learn.appfolio.com/apm/assets/02-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2008 {
+      background-image: url("//learn.appfolio.com/apm/assets/03-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2009 {
+      background-image: url("//learn.appfolio.com/apm/assets/04-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2010 {
+      background-image: url("//learn.appfolio.com/apm/assets/05-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2011 {
+      background-image: url("//learn.appfolio.com/apm/assets/06-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2012 {
+      background-image: url("//learn.appfolio.com/apm/assets/07-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2013 {
+      background-image: url("//learn.appfolio.com/apm/assets/08-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2014 {
+      background-image: url("//learn.appfolio.com/apm/assets/09-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2015 {
+      background-image: url("//learn.appfolio.com/apm/assets/10-timeline-small-640x595.jpg"); }
+    #about_controller .about .t-2016 {
+      background-image: url("//learn.appfolio.com/apm/assets/11-timeline-small-screen-640x595.jpg"); }
+    #about_controller .about .t-2017 {
+      background-image: url("//appfoliocdn.s3.amazonaws.com/inc/images/timeline_2017_640x595.jpg"); }
+    #about_controller .about .t-2018 {
+      background-image: url("//learn.appfolio.com/apm/assets/12-timeline-small-640x595.jpg"); } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #about_controller .about .slide div {
+      padding: 0 12% 0 11%; }
+    #about_controller .about .t-2006 {
+      background-image: url("//learn.appfolio.com/apm/assets/01-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2007 {
+      background-image: url("//learn.appfolio.com/apm/assets/02-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2008 {
+      background-image: url("//learn.appfolio.com/apm/assets/03-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2009 {
+      background-image: url("//learn.appfolio.com/apm/assets/04-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2010 {
+      background-image: url("//learn.appfolio.com/apm/assets/05-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2011 {
+      background-image: url("//learn.appfolio.com/apm/assets/06-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2012 {
+      background-image: url("//learn.appfolio.com/apm/assets/07-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2013 {
+      background-image: url("//learn.appfolio.com/apm/assets/08-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2014 {
+      background-image: url("//learn.appfolio.com/apm/assets/09-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2015 {
+      background-image: url("//learn.appfolio.com/apm/assets/10-timeline-medium-1020x465.jpg"); }
+    #about_controller .about .t-2016 {
+      background-image: url("//learn.appfolio.com/apm/assets/11-timeline-medium-screen-1020x465.jpg"); }
+    #about_controller .about .t-2018 {
+      background-image: url("//learn.appfolio.com/apm/assets/12-timeline-medium-1020x465.jpg"); }
+    #about_controller .about h4.according span {
+      margin-bottom: 18px; } }
+  @media screen and (min-width: 861px) and (max-width: 63.9375em) {
+    #about_controller .about .t-2017 {
+      background-image: url("//appfoliocdn.s3.amazonaws.com/inc/images/timeline_2017_1020x465.jpg"); } }
+  @media screen and (min-width: 40em) and (max-width: 860px) {
+    #about_controller .about .t-2017 {
+      background-image: url("//appfoliocdn.s3.amazonaws.com/inc/images/timeline_2017_1020x465_02.jpg"); } }
+  @media screen and (max-width: 890px) {
+    #about_controller .about .slide div {
+      padding: 0 11% 0 8%; } }
+  @media screen and (max-width: 750px) {
+    #about_controller .about .slide div {
+      padding: 0 13% 0 5%; } }
+  @media screen and (min-width: 64em) {
+    #about_controller .about .team .coalson {
+      margin-left: 12.499995%; }
+    #about_controller .about .slide div {
+      padding: 0 9% 0 5%; }
+    #about_controller .about .t-2006 {
+      background-image: url("//learn.appfolio.com/apm/assets/01-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2007 {
+      background-image: url("//learn.appfolio.com/apm/assets/02-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2008 {
+      background-image: url("//learn.appfolio.com/apm/assets/03-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2009 {
+      background-image: url("//learn.appfolio.com/apm/assets/04-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2010 {
+      background-image: url("//learn.appfolio.com/apm/assets/05-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2011 {
+      background-image: url("//learn.appfolio.com/apm/assets/06-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2012 {
+      background-image: url("//learn.appfolio.com/apm/assets/07-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2013 {
+      background-image: url("//learn.appfolio.com/apm/assets/08-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2014 {
+      background-image: url("//learn.appfolio.com/apm/assets/09-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2015 {
+      background-image: url("//learn.appfolio.com/apm/assets/10-timeline-large-1500x465.jpg"); }
+    #about_controller .about .t-2016 {
+      background-image: url("//learn.appfolio.com/apm/assets/11-timeline-large-screen-1500x465.jpg"); }
+    #about_controller .about .t-2018 {
+      background-image: url("//learn.appfolio.com/apm/assets/12-timeline-large-1500x465.jpg"); } }
+  @media screen and (min-width: 1271px) {
+    #about_controller .about .t-2017 {
+      background-image: url("//appfoliocdn.s3.amazonaws.com/inc/images/timeline_2017_1500x465.jpg"); } }
+  @media screen and (min-width: 64em) and (max-width: 1270px) {
+    #about_controller .about .t-2017 {
+      background-image: url("//appfoliocdn.s3.amazonaws.com/inc/images/timeline_2017_1500x465_02.jpg"); } }
+
+#about_controller .headshot {
+  float: left;
+  margin: 0 30px 10px 0; }
+
+@media only screen and (max-width: 639px) {
+  #about_controller .afmodal {
+    padding-top: 10px; } }
+
+@media screen and (max-width: 490px) {
+  #about_controller .timeline .slide div {
+    margin-top: 50% !important; } }
+
+@media screen and (max-width: 440px) {
+  #about_controller .timeline .slide div {
+    margin-top: 55% !important; } }
+
+@media screen and (max-width: 420px) {
+  #about_controller .timeline .slide div {
+    margin-top: 61% !important; } }
+
+@media screen and (max-width: 400px) {
+  #about_controller .timeline .slide div {
+    margin-top: 64% !important; } }
+
+@media only screen and (max-width: 450px) {
+  #about_controller .headshot {
+    display: block;
+    float: none;
+    margin: 0 auto 20px; }
+  #about_controller .afmodal h3 {
+    text-align: center; }
+  #about_controller .afmodal h3 strong {
+    display: block; }
+  #about_controller .afmodal h3 span {
+    display: none; }
+  #about_controller .headshot {
+    display: block;
+    float: none;
+    margin: 0 auto 20px; } }
+
+/* @media only screen and (min-width: 640px) {
+	#about_controller {
+		
+		.afmodal .hide-lg {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	#about_controller {
+		h1 {
+			margin-top: 75px;
+		}
+	}
+} */

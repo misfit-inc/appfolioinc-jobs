@@ -1,0 +1,37 @@
+#errors_controller section {
+  padding-bottom: 100px; }
+
+#errors_controller h3 {
+  margin-top: 85px;
+  text-align: center; }
+
+#errors_controller h2 {
+  margin-bottom: 85px;
+  text-align: center; }
+
+#errors_controller h5 {
+  font-size: 1em;
+  margin: 20px 0 25px; }
+
+#errors_controller .large-4 {
+  text-align: center; }
+
+#errors_controller .large-4 img {
+  width: 275px; }
+
+#errors_controller .solutions .g_btn {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  #errors_controller .buttons {
+    display: none; }
+  #errors_controller h5 {
+    margin: 20px auto 25px;
+    width: 600px; }
+  #errors_controller .solutions .g_btn {
+    display: inline-block;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 635px) {
+  #errors_controller h5 {
+    width: 100%; } }

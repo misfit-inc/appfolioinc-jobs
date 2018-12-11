@@ -1,0 +1,96 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.products {
+
+	.prod_list {
+		width: 100%;
+
+		p {
+			color: #fff;
+			margin-bottom: 35px;
+		}
+
+		object {
+			display: block;
+			margin: 0 auto 25px;
+			width: 56%;
+		}
+
+		.white_invert {
+			border: solid 1px #FFF;
+			color: #FFF;
+		}
+	}
+
+	.appfolio {
+		background-color: #00aed3;
+		margin-top: 80px;
+		padding: 100px 0 65px;
+
+		.white_invert:hover {
+			border: solid 1px #FFF;
+			color: #00aed3;
+		}		
+	}
+
+	.mycase {
+		background-color: #0070b0;
+		padding: 100px 0 65px;
+
+		.white_invert:hover {
+			border: solid 1px #FFF;
+			color: #0070b0;
+		}		
+	}
+
+	.rentlinx {
+		background-color: #0095d9;
+		padding: 100px 0 65px;
+
+		.white_invert:hover {
+			border: solid 1px #FFF;
+			color: #0095d9;
+		}		
+	}
+
+	.video {
+		margin-bottom: 100px;
+	}
+	
+	/* Large screens */
+	@media only screen and (min-width: 64.063em) {
+		.hero {
+			background-image: url('https://learn.appfolio.com/apm/assets/products-page-hero-large-1500x970.jpg');
+		}
+	}
+
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		.hero {
+			background-image: url('https://learn.appfolio.com/apm/assets/products-page-hero-medium-1020x970.jpg');
+		}
+
+		.prod_list object {
+			width: 65%;
+		}
+	}
+
+	/* Small screens */
+	@media screen and (max-width: 39.9375em) {
+		.hero {
+			background-image: url('https://learn.appfolio.com/apm/assets/products-page-hero-small-640x450.jpg');
+			height: 450px;
+
+			h1 {
+				font-size: 2.9em;
+			}
+		}
+
+		.prod_list object {
+			width: 100%;
+		}
+	}
+}
