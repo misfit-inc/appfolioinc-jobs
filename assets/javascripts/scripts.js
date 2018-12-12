@@ -1,5 +1,8 @@
+// This is the animator for the animated icons based on Airbnb's lottie svg animator.
+// http://airbnb.io/lottie/web/getting-started.html
 lottie.setQuality('high');
 
+// Parameters for animating the individual animated svg icons
 var happiness_step_1_params = {
 	container: document.querySelector('.happiness-step-1'),
 	renderer: 'svg',
@@ -72,6 +75,7 @@ var happiness_step_4_2_params = {
 	}
 };
 
+// Assign the lottie loadAnimation to variables
 var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	happiness_step_2_1_animation = lottie.loadAnimation(happiness_step_2_1_params),
 	happiness_step_2_2_animation = lottie.loadAnimation(happiness_step_2_2_params),
@@ -79,11 +83,10 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	happiness_step_4_1_animation = lottie.loadAnimation(happiness_step_4_1_params),
 	happiness_step_4_2_animation = lottie.loadAnimation(happiness_step_4_2_params);
 
-// happiness_step_1_animation;
-// happiness_step_2_animation;
-// happiness_step_3_animation;
-// happiness_step_4_animation;
+// End animated SVG icons parameters
 
+// jQuery, if it exists will be passed to the function. 
+// $ is the name that variable will take in the scope of the function
 (function ($) {
 
 	$("#owl-cards").owlCarousel({
@@ -112,6 +115,9 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		}
 	});
 
+	// This controls the photo masonry at the bottom of the page
+	// Set the timeout to provide Isotope time to adjust to page load time
+	// https://isotope.metafizzy.co/docs
 	setTimeout(function() {
 		$('.tiles.photos .tile-container').isotope({
 			layoutMode: 'masonry',
@@ -122,6 +128,8 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		});
 	}, 500);
 
+	// Inview controls the fadein of sections as you scroll to the elements into view
+	// http://imakewebthings.com/waypoints/shortcuts/inview/
 	$('.inview').each(function () {
 		var inview = new Waypoint.Inview({
 			element: this,
@@ -135,6 +143,8 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		});
 	});
 
+	// Apply inview to all animated SVGs as you scroll to them into view
+	// Check and load the designated inviewed SVG
 	$('.happiness-step-icon').each(function () {
 		var inview = new Waypoint.Inview({
 			element: this,
@@ -164,6 +174,15 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 				}
 			}
 		});
+	});
+
+
+	// We have made an iterated version of opening ".afmodal" found in onready.js
+	// This queries the value of the data object of the element
+	$('.open-afmodal').click(function (e) {
+		e.preventDefault();
+		var modal_identifier = $(this).data('modal-identifier');
+		$('#' + modal_identifier).fadeIn(300);
 	});
 
 })(jQuery)

@@ -6677,8 +6677,19 @@ section p, section a, section span,
 section h1, section h2, section h3, section h4, section h5 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
+body p, body a, body span,
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #212121; }
+
+body section p {
+  color: #212121; }
+
 .x-content.wide {
   max-width: 72.5rem; }
+
+section .tile-header p {
+  font-weight: 300; }
 
 section .section-title {
   color: #3c4650;
@@ -6769,8 +6780,6 @@ section p {
   .tiles h2,
   .tiles h3 {
     color: #3c4650; }
-  .tiles p {
-    color: #000; }
 
 .tile {
   background-position: center;
@@ -6800,6 +6809,18 @@ section p {
     margin-bottom: 1.3rem; }
     .tile.right-side .level-1 h2 {
       color: #fff; }
+    @media all and (-ms-high-contrast: none) {
+      .tile.right-side .level-1 img {
+        width: 4rem; } }
+    .tile.right-side .level-1 .open-afmodal {
+      opacity: .5;
+      -webkit-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
+      .tile.right-side .level-1 .open-afmodal:hover {
+        opacity: 1; }
   .tile.right-side .level-2 {
     height: 21rem;
     margin-bottom: 1.3rem; }
@@ -6811,30 +6832,60 @@ section p {
       .tile.right-side .level-3 {
         height: auto; } }
     .tile.right-side .level-3 .tile {
-      height: 100%; }
+      height: 100%;
+      position: relative; }
+      .tile.right-side .level-3 .tile a {
+        display: flex;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; }
+      .tile.right-side .level-3 .tile img {
+        align-self: center;
+        left: 0;
+        margin: 0 auto;
+        right: 0; }
+      @media all and (-ms-high-contrast: none) {
+        .tile.right-side .level-3 .tile .tile-icon {
+          top: 14%; } }
+    .tile.right-side .level-3 > .column .tile:before {
+      background-color: rgba(0, 0, 0, 0.3);
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      -webkit-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
+    .tile.right-side .level-3 > .column .tile:hover:before {
+      opacity: 1;
+      z-index: 1; }
+    .tile.right-side .level-3 > .column .tile:hover .tile-icon {
+      opacity: 1; }
     .tile.right-side .level-3 > .left-side {
-      padding-right: 0;
-      height: 100%; }
+      height: 100%;
+      padding-right: 0; }
       @media only screen and (max-width: 40em) {
         .tile.right-side .level-3 > .left-side {
           padding: 0;
           height: 20rem; } }
     .tile.right-side .level-3 > .right-side {
-      padding-left: 0;
-      height: 100%; }
+      height: 100%;
+      padding-left: 0; }
       @media only screen and (max-width: 40em) {
         .tile.right-side .level-3 > .right-side {
-          padding: 0;
           height: 20rem;
-          margin-bottom: 1.3rem; } }
+          margin-bottom: 1.3rem;
+          padding: 0; } }
       .tile.right-side .level-3 > .right-side .tile {
         display: flex;
         position: relative; }
-        .tile.right-side .level-3 > .right-side .tile img {
-          align-self: center;
-          left: 0;
-          margin: 0 auto;
-          right: 0; }
 
 .tile-header {
   height: auto; }
@@ -6850,7 +6901,14 @@ section p {
   display: flex; }
 
 .tile-icon {
-  position: absolute; }
+  opacity: .5;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease; }
 
 .tiles.photos .section-title {
   margin-bottom: 3rem; }
@@ -6861,13 +6919,13 @@ section p {
     visibility: hidden; }
 
 .tiles.photos .tile {
-  width: 24%;
+  height: 19.3rem;
   margin-bottom: .8rem;
-  height: 19.3rem; }
+  width: 24%; }
   @media only screen and (max-width: 40em) {
     .tiles.photos .tile {
-      width: 100%;
-      height: 20rem; } }
+      height: 20rem;
+      width: 100%; } }
   @media only screen and (min-width: 40.0625em) {
     .tiles.photos .tile {
       width: 49%; } }
@@ -6889,8 +6947,10 @@ section p {
         width: 49%; } }
     @media only screen and (max-width: 40em) {
       .tiles.photos .tile.wide {
-        width: 100%;
-        height: 20rem; } }
+        height: 20rem;
+        width: 100%; } }
+  .tiles.photos .tile.background-top {
+    background-position: top; }
 
 .cards-slider {
   margin-bottom: 10rem; }
@@ -7050,7 +7110,8 @@ section p {
     display: flex; }
     @media only screen and (max-width: 40em) {
       .photo-content .segment {
-        display: block; } }
+        display: block;
+        margin-bottom: 3rem; } }
     .photo-content .segment > div {
       align-self: center; }
     .photo-content .segment h3 {
@@ -7070,14 +7131,36 @@ section p {
       color: #ff9b21; }
     .photo-content .segment .color-red {
       color: #ff0032; }
-    .photo-content .segment .happiness-step-icon svg {
-      width: auto !important;
-      height: auto !important; }
+    .photo-content .segment .happiness-step-icon {
+      margin: 0 auto; }
+      .photo-content .segment .happiness-step-icon svg {
+        height: auto !important;
+        width: auto !important; }
     .photo-content .segment .happiness-step-2,
     .photo-content .segment .happiness-step-4 {
       margin-top: -2rem; }
+    .photo-content .segment .segment-photo.left {
+      margin-left: 3rem;
+      padding-left: 0; }
+    .photo-content .segment .segment-photo.right {
+      margin-right: 3rem;
+      padding-right: 0; }
+    .photo-content .segment .align-left {
+      margin-left: -10%;
+      padding-left: 0; }
+      @media only screen and (max-width: 40em) {
+        .photo-content .segment .align-left {
+          padding: 0;
+          margin: 0; } }
     .photo-content .segment .align-right {
+      margin-right: -10%;
+      padding-right: 0;
       text-align: right; }
+      @media only screen and (max-width: 40em) {
+        .photo-content .segment .align-right {
+          padding: 0;
+          margin: 0;
+          text-align: left; } }
   .photo-content .connector {
     margin: 3rem auto; }
     @media only screen and (max-width: 40em) {
@@ -7147,9 +7230,9 @@ section p {
     border-bottom: 1px solid #00add2;
     color: #00add2;
     font-size: 1.3125rem;
-    text-transform: uppercase;
-    padding-bottom: .3rem;
     font-weight: 300;
+    padding-bottom: .3rem;
+    text-transform: uppercase;
     -webkit-transition: border-bottom-color 0.3s ease;
     -moz-transition: border-bottom-color 0.3s ease;
     -ms-transition: border-bottom-color 0.3s ease;
@@ -7160,6 +7243,88 @@ section p {
       .cards .cards-cta a:hover button {
         background-color: transparent;
         color: #00add2; }
+
+.map {
+  height: 30rem;
+  position: relative;
+  margin-bottom: 10rem; }
+  @media only screen and (max-width: 40em) {
+    .map {
+      margin-bottom: 4rem;
+      height: auto; } }
+  @media only screen and (min-width: 40.0625em) {
+    .map {
+      margin-bottom: 6rem;
+      height: auto; } }
+  @media only screen and (min-width: 64.0625em) {
+    .map {
+      margin-bottom: 8rem;
+      height: 30rem; } }
+  @media only screen and (min-width: 90.0625em) {
+    .map {
+      margin-bottom: 10rem; } }
+  .map > .row {
+    height: 100%;
+    position: relative; }
+  .map .map-segment {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media only screen {
+      .map .map-segment {
+        height: 30rem; } }
+    @media only screen and (min-width: 64.0625em) {
+      .map .map-segment {
+        height: 100%; } }
+    .map .map-segment.hoverable {
+      box-shadow: 0 0 0 transparent;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      @media only screen {
+        .map .map-segment.hoverable {
+          position: relative;
+          width: 100%;
+          height: 30rem; } }
+      @media only screen and (min-width: 64.0625em) {
+        .map .map-segment.hoverable {
+          position: absolute;
+          width: 50%;
+          height: 100%; } }
+      @media only screen {
+        .map .map-segment.hoverable:hover {
+          box-shadow: none;
+          top: auto;
+          width: 100%; } }
+      @media only screen and (min-width: 64.0625em) {
+        .map .map-segment.hoverable:hover {
+          box-shadow: -8px 0px 14px #aaa;
+          height: 105%;
+          top: -2.5%;
+          width: 52.5%; } }
+    .map .map-segment a:hover .play-icon {
+      opacity: 1; }
+    .map .map-segment a .play-icon {
+      left: 0;
+      margin: 0 auto;
+      right: 0;
+      bottom: 2.4rem;
+      position: absolute;
+      width: 5rem;
+      opacity: .5;
+      -webkit-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -ms-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease; }
 
 .events {
   margin-bottom: 10.5rem; }
@@ -7265,10 +7430,6 @@ section p {
     @media only screen and (min-width: 64.0625em) {
       .awards.non-cycle span {
         margin-bottom: 1.5rem; } }
-    @media all and (-ms-high-contrast: none) {
-      .awards.non-cycle span {
-        margin-bottom: 0 !important;
-        margin-top: 0 !important; } }
   .awards.non-cycle .awards-container {
     column-count: 4; }
     @media only screen and (max-width: 40em) {
@@ -7280,9 +7441,13 @@ section p {
     @media only screen and (min-width: 64.0625em) {
       .awards.non-cycle .awards-container {
         column-count: 4; } }
-  .awards.non-cycle .awards .glassdoor {
+  .awards.non-cycle .glassdoor {
     margin-bottom: 2rem; }
   .awards.non-cycle .pacificoast {
     margin: 1rem auto 3rem; }
-  .awards.non-cycle .awards .southcoast {
+  .awards.non-cycle .southcoast {
     margin: 2rem auto; }
+  .awards.non-cycle .stevie {
+    background-position: -539px -152px;
+    width: 113px;
+    height: 130px; }

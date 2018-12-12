@@ -1,4 +1,10 @@
-@import "./foundation/settings";
+// Previously enabled so we can use the media queries functions
+// @import "./foundation/settings";
+
+
+// media_queries are all the media functions that we needed 
+// for adjusting elements on different screen sizes
+@import "./common/media_queries";
 @import "./foundation.scss";
 
 @import "common/variables";
@@ -7,7 +13,6 @@
 @import "common/unit-conversions";
 @import "common/common";
 @import "components/section";
-// @import "common/fonts";
 
 @import "components/hero";
 @import "components/tiles";

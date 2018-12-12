@@ -4,13 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Appfolio Engineering Microsite</title>
+	<title>AppFolio Engineering Microsite</title>
 	<link rel="shortcut icon" href="//www.appfolioinc.com/favicon.ico?" type="image/x-icon" />
 
+	<!-- Using Google's Open Sans Font for the weight 300 font-weight -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
 	<!-- Foundation -->
-	<!-- <link rel="stylesheet" type="text/css" href="./assets/dist/css/foundation.css"> -->
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/motion-ui.css">
 
@@ -19,11 +19,15 @@
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/owl.theme.default.css">
 
 	<!-- Styles -->
+	<!-- style.css also contains the compilation of foundation 5.5.3 -->
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/media.css">
 
 	<!-- Now using the site's compiled CSS instead -->
 	<link rel="stylesheet" type="text/css" href="./assets/dist/css/appfolio.css">
+
+	<!-- Wistia -->
+	<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
 </head>
 <body>
 
@@ -52,7 +56,6 @@
 		<!-- Hero -->
 		<header class="hero hero-microsite flex inview mui-enter fade-in ease slow transition-delay-500" data-animation="mui-enter-active" style="background-image: url('./assets/images/banner-photo.jpg');">
 			<div class="x-content h-container wide medium-9 small-9">
-				<img src="./assets/images/icons/ico-appfolio-icon.svg" alt="Appfoliio Icon" aria-hidden="true">
 				<h1 class="hero-heading large-12 text-left inview mui-enter fade-in anim-left-right ease slow transition-delay-1000" data-animation="mui-enter-active">Hard Problems, <br>High Impact.</h1>
 			</div>
 			<div class="hero-bar text-center flex large-12 small-10 small-centered">
@@ -83,7 +86,9 @@
 						<div class="tile right-side column float-right large-6">
 							<div class="tile-media level-1">
 								<div class="tile column large-3 flex">
-									<img alt="Icon - Play" src="./assets/images/icons/ico-play.svg" aria-hidden="true">
+									<a class="open-afmodal" href="#" data-modal-identifier="why-appfolio">
+										<img alt="Icon - Play" src="./assets/images/icons/ico-play.svg" aria-hidden="true">
+									</a>
 								</div>
 								<div class="tile column large-9 flex">
 									<h2>Why AppFolio</h2>
@@ -94,13 +99,14 @@
 							</div>
 							<div class="tile level-3 column row large-12 medium-12">
 								<div class="column right-side large-6 medium-6 small-12">
-									<div class="tile" style="background-image: url('./assets/images/photo-3.jpg');">
-										<img class="tile-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true">
+									<div class="tile flex" style="background-image: url('./assets/images/photo-3.jpg');">
+										<a class="open-afmodal" href="#" data-modal-identifier="tile-1"><img class="tile-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
 										<img class="show-for-sr" alt="Tile Photo 4" src="./assets/images/photo-3.jpg">
 									</div>
 								</div>
 								<div class="column left-side large-6 medium-6 small-12">
-									<div class="tile" style="background-image: url('./assets/images/photo-4.jpg');">
+									<div class="tile flex" style="background-image: url('./assets/images/photo-4.jpg');">
+										<a class="open-afmodal" href="#" data-modal-identifier="tile-2"><img class="tile-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
 										<img class="show-for-sr" alt="Tile Photo 3" src="./assets/images/photo-4.jpg">
 									</div>
 								</div>
@@ -115,7 +121,7 @@
 		<!-- Cards Slider -->
 		<section class="cards-slider inview mui-enter fade-in ease slow transition-delay-500" data-animation="mui-enter-active">
 			<div>
-				<h2 class="section-title">Why Appfolio</h2>
+				<h2 class="section-title">Why AppFolio</h2>
 
 				<div id="owl-cards" class="owl-carousel cards owl-theme">
 					<div class="large-12 medium-10 medium-centered small-10 small-centered">
@@ -154,10 +160,10 @@
 				<h2 class="section-title">How We Engineer Happiness</h2>
 
 				<div class="segment row inview mui-enter fade-in ease slow anim-left-right transition-delay-300" data-animation="mui-enter-active">
-					<div class="columns large-3 small-12 small-centered text-center">
+					<div class="segment-photo columns large-3 small-11 small-centered text-center">
 						<div class="happiness-step-1 happiness-step-icon" data-step="1"></div>
 					</div>
-					<div class="columns align-left large-7 small-12 small-centered">
+					<div class="columns align-left large-7 small-11 small-centered">
 						<h4 class="color-blue">Step 1:</h4>
 						<h3>Create A Connection</h3>
 						<p>We connect with our customers every day to ensure we create solutions that deliver on their precise business needs.</p>
@@ -167,16 +173,16 @@
 					<img src="./assets/images/segment-connector-left.svg" alt="Segment connector" aria-hidden="true">
 				</div>
 				<div class="segment row inview mui-enter fade-in ease slow anim-right-left transition-delay-300" data-animation="mui-enter-active">
-					<div class="columns show-for-small-only large-3 small-12 small-centered text-center">
+					<div class="columns show-for-small-only large-3 small-11 small-centered text-center">
 						<div class="happiness-step-2-2 happiness-step-icon" data-step="2"></div>
 					</div>
-					<div class="columns align-right large-7 large-8 small-12 small-centered">
+					<div class="columns align-right large-7 small-11 small-centered">
 						<h4 class="color-purple">Step 2:</h4>
 						<h3>Ship Fast, Learn Fast</h3>
 						<p>We believe fiercely that simpler is better. We start by building simplest shortg that could solve the problem, ship it
 						quickly, and learn based on feedback from our customers. We have a bias for action in all that we do.</p>
 					</div>
-					<div class="columns show-for-medium-up large-4 small-12 small-centered text-center">
+					<div class="segment-photo columns show-for-medium-up large-3 small-12 small-centered text-center">
 						<div class="happiness-step-2-1 happiness-step-icon" data-step="2"></div>
 					</div>
 				</div>
@@ -184,10 +190,10 @@
 					<img src="./assets/images/segment-connector-right.svg" alt="Segment connector" aria-hidden="true">
 				</div>
 				<div class="segment row inview mui-enter fade-in ease slow anim-left-right transition-delay-300" data-animation="mui-enter-active">
-					<div class="columns large-3 text-center">
+					<div class="segment-photo columns large-3 small-11 small-centered text-center">
 						<div id="happiness-step-3" class="happiness-step-3 happiness-step-icon" data-step="3"></div>
 					</div>
-					<div class="columns align-left large-7 large-8 small-12 small-centered">
+					<div class="columns align-left large-7 small-11 small-centered">
 						<h4 class="color-orange">Step 3:</h4>
 						<h3>Iterate, Iterate, Iterate</h3>
 						<p>Take that simple solution and optimize it for long-term impact, ease of use, and maintainability based on feedback. We
@@ -198,16 +204,16 @@
 					<img src="./assets/images/segment-connector-left.svg" alt="Segment connector" aria-hidden="true">
 				</div>
 				<div class="segment row inview mui-enter fade-in ease slow anim-right-left transition-delay-300" data-animation="mui-enter-active">
-					<div class="columns large-3 small-12 small-centered text-center show-for-small-only">
+					<div class="columns large-3 small-11 small-centered text-center show-for-small-only">
 						<div class="happiness-step-4-2 happiness-step-icon" data-step="4"></div>
 					</div>
-					<div class="columns align-right large-7 small-12 small-centered">
+					<div class="columns align-right large-7 small-11 small-centered">
 						<h4 class="color-red">Step 4:</h4>
 						<h3>Feel the Love</h3>
 						<p>Build your code in the morning, deploy it in the afternoon and bask in the customer love by the end of the day. We make
 						magic for our customers and they love us for it.</p>
 					</div>
-					<div class="columns large-3 small-12 small-centered text-center show-for-medium-up">
+					<div class="segment-photo columns large-3 small-11 small-centered text-center show-for-medium-up">
 						<div class="happiness-step-4-1 happiness-step-icon" data-step="4"></div>
 					</div>
 				</div>
@@ -274,8 +280,17 @@
 		<!-- /Cards -->
 
 		<!-- Map -->
-		<!-- Todo -->
-		<!-- <section class="map"></section> -->
+		<section class="map inview mui-enter fade-in ease slow transition-delay-500" data-animation="mui-enter-active">
+			<div class="x-content wide row">
+				<div class="map-segment left large-6 medium-12 small-12" style="background-image: url('./assets/images/location-map.jpg');">
+					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/location-map.jpg">
+				</div>
+				<div class="map-segment hoverable flex right large-6 medium-12 small-12" style="background-image: url('./assets/images/appfolio-video-poster.jpg');">
+					<a class="open-afmodal" href="#" data-modal-identifier="map-segment-1"><img class="play-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
+					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/appfolio-video-poster.jpg">
+				</div>
+			</div>
+		</section>
 		<!-- /Map -->
 
 		<!-- Events -->
@@ -342,44 +357,44 @@
 						<div class="tile " style="background-image: url('./assets/images/tile-1.jpg')">
 							<img alt="Tile Photo 1" src="./assets/images/tile-1.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-2.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-2.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-1.jpg')">
+							<img alt="Tile Photo 2" src="./assets/images/photo-tiny-1.jpg">
 						</div>
 						<div class="tile" style="background-image: url('./assets/images/tile-4.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-4.jpg">
+							<img alt="Tile Photo 3" src="./assets/images/tile-4.jpg">
 						</div>
 						<div class="tile" style="background-image: url('./assets/images/tile-5.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-5.jpg">
+							<img alt="Tile Photo 4" src="./assets/images/tile-5.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-3.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-3.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-2.jpg')">
+							<img alt="Tile Photo 5" src="./assets/images/photo-tiny-2.jpg">
 						</div>
-						<div class="tile" style="background-image: url('./assets/images/tile-6.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-6.jpg">
+						<div class="tile background-top" style="background-image: url('./assets/images/tile-6.jpg')">
+							<img alt="Tile Photo 6" src="./assets/images/tile-6.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-1.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-3.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-3.jpg')">
+							<img alt="Tile Photo 7" src="./assets/images/photo-tiny-3.jpg">
 						</div>
-						<div class="tile" style="background-image: url('./assets/images/tile-2.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-6.jpg">
+						<div class="tile background-top" style="background-image: url('./assets/images/tile-2.jpg')">
+							<img alt="Tile Photo 8" src="./assets/images/tile-2.jpg">
 						</div>
-						<div class="tile" style="background-image: url('./assets/images/tile-4.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-6.jpg">
+						<div class="tile background-top" style="background-image: url('./assets/images/tile-3.jpg')">
+							<img alt="Tile Photo 9" src="./assets/images/tile-3.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-5.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-2.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-4.jpg')">
+							<img alt="Tile Photo 10" src="./assets/images/photo-tiny-4.jpg">
 						</div>
-						<div class="tile wide" style="background-image: url('./assets/images/tile-6.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-6.jpg">
+						<div class="tile wide" style="background-image: url('./assets/images/11.jpg')">
+							<img alt="Tile Photo 11" src="./assets/images/11.jpg">
 						</div>
 						<div class="tile" style="background-image: url('./assets/images/tile-1.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-6.jpg">
+							<img alt="Tile Photo 12" src="./assets/images/tile-6.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-2.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-2.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-5.jpg')">
+							<img alt="Tile Photo 13" src="./assets/images/photo-tiny-5.jpg">
 						</div>
-						<div class="tile short" style="background-image: url('./assets/images/tile-4.jpg')">
-							<img alt="Tile Photo 1" src="./assets/images/tile-3.jpg">
+						<div class="tile short" style="background-image: url('./assets/images/photo-tiny-6.jpg')">
+							<img alt="Tile Photo 14" src="./assets/images/photo-tiny-6.jpg">
 						</div>
 					</div>
 					</div>
@@ -427,9 +442,76 @@
 		</div>
 	</footer>
 
+	<div id="tile-1" class="tiles tile-1 afmodal">
+		<div class="x-content">
+			<div class="row">
+				<a class="close-af-modal">&#215;</a>
+			</div>
+			<div class="row">
+				<div id="wistia_lnbjggy0gw" class="wistia_embed">&nbsp;</div>
+				<script>
+					wistiaEmbed = Wistia.embed("lnbjggy0gw", {
+						videoFoam: true
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div id="tile-2" class="afmodal">
+		<div class="x-content">
+			<div class="row">
+				<a class="close-af-modal">&#215;</a>
+			</div>
+			<div class="row">
+				<div id="wistia_0mw0iap2kw" class="wistia_embed">&nbsp;</div>
+				<script>
+					wistiaEmbed = Wistia.embed("0mw0iap2kw", {
+						videoFoam: true
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pending Wistia Video -->
+	<!-- <div id="map-segment-1" class="afmodal">
+		<div class="x-content">
+			<div class="row">
+				<a class="close-af-modal">&#215;</a>
+			</div>
+			<div class="row">
+				<div id="wistia_lnbjggy0gw" class="wistia_embed">&nbsp;</div>
+				<script>
+					wistiaEmbed = Wistia.embed("lnbjggy0gw", {
+						videoFoam: true
+					});
+				</script>
+			</div>
+		</div>
+	</div> -->
+
+	<div id="why-appfolio" class="afmodal">
+		<div class="x-content">
+			<div class="row">
+				<a class="close-af-modal">&#215;</a>
+			</div>
+			<div class="row">
+				<div id="wistia_gxu7ekcl34" class="wistia_embed">&nbsp;</div>
+				
+				<script>
+					wistiaEmbed = Wistia.embed("gxu7ekcl34", {
+						videoFoam: true
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+
 	<!-- JS - Already found in appfolioinc.com -->
 	<script src="./assets/dist/js/jquery.min.js" defer></script>
 	<script src="./assets/dist/js/owl.carousel.min.js" defer></script>
+	<script src="./assets/javascripts/onready.js" defer></script>
 
 	<!-- JS - Added dist -->
 	<script src="./assets/dist/js/isotope.pkgd.min.js" defer></script>
@@ -438,7 +520,6 @@
 	<script src="./assets/dist/js/lottie.min.js" defer></script>
 	<script src="./assets/dist/js/jquery.waypoints.min.js" defer></script>
 	<script src="./assets/dist/js/inview.min.js" defer></script>
-	<!-- <script src="./assets/dist/js/jquery.inview.min.js" defer></script> -->
 
 	<!-- JS - Added scripts -->
 	<script src="./assets/javascripts/scripts.js" defer></script>

@@ -10,10 +10,6 @@
 	h3 {
 		color: $color-primary;
 	}
-
-	p {
-		color: $color-text;
-	}
 }
 
 .tile {
@@ -61,6 +57,23 @@
 			h2 {
 				color: #fff;
 			}
+
+			// IE11 fix
+			@media all and (-ms-high-contrast:none) {
+				img {
+					width: 4rem;
+				}
+			}
+
+			.open-afmodal {
+				opacity: .5;
+
+				@include transition(opacity .4s ease);
+
+				&:hover {
+					opacity: 1;
+				}
+			}
 		}
 
 		.level-2 {
@@ -79,11 +92,59 @@
 
 			.tile {
 				height: 100%;
+				position: relative;
+
+				a {
+					display: flex;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
+				img {
+					align-self: center;
+					left: 0;
+					margin: 0 auto;
+					right: 0;
+				}
+
+				// IE11 fix
+				@media all and (-ms-high-contrast:none) {
+					.tile-icon {
+						top: 14%;
+					}
+				}
+			}
+
+			> .column .tile {
+				 &:before {
+					background-color: rgba(0, 0, 0, .3);
+					content: '';
+					height: 100%;
+					left: 0;
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+
+					@include transition(opacity .4s ease);
+				}
+			
+				&:hover:before {
+					opacity: 1;
+					z-index: 1;
+				}
+
+				&:hover .tile-icon {
+					opacity: 1;
+				}
 			}
 
 			> .left-side {
-				padding-right: 0;
 				height: 100%;
+				padding-right: 0;
 
 				@media #{$small-only} {
 					padding: 0;
@@ -92,25 +153,18 @@
 			}
 
 			> .right-side {
-				padding-left: 0;
 				height: 100%;
+				padding-left: 0;
 
 				@media #{$small-only} {
-					padding: 0;
 					height: 20rem;
 					margin-bottom: 1.3rem;
+					padding: 0;
 				}
 				
 				.tile {
 					display: flex;
 					position: relative;
-
-					img {
-						align-self: center;
-						left: 0;
-						margin: 0 auto;
-						right: 0;
-					}
 				}
 			}
 		}
@@ -138,5 +192,9 @@
 }
 
 .tile-icon {
+	opacity: .5;
 	position: absolute;
+	z-index: 2;
+
+	@include transition(opacity .4s ease);
 }

@@ -86,9 +86,9 @@
 			border-bottom: 1px solid $color-lighter-blue;
 			color: $color-lighter-blue;
 			font-size: rem-calc(21);
-			text-transform: uppercase;
-			padding-bottom: .3rem;
 			font-weight: 300;
+			padding-bottom: .3rem;
+			text-transform: uppercase;
 
 			@include transition(border-bottom-color .3s ease);
 
