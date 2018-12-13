@@ -1,19 +1,19 @@
 .cards {
 	margin-bottom: 10rem;
 
-	@media #{$small-only} {
+	@media only screen and (max-width: 40em) {
 		margin-bottom: 4rem;
 	}
 
-	@media #{$medium-up} {
+	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6rem;
 	}
 
-	@media #{$large-up} {
+	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8rem;
 	}
 
-	@media #{$xlarge-up} {
+	@media only screen and (min-width: 120.0625em) {
 		margin-bottom: 10rem;
 	}
 
@@ -34,11 +34,11 @@
 		justify-content: space-between;
 		margin-bottom: 3rem;
 
-		@media #{$medium-up} {
+		@media only screen and (min-width: 64.0625em) {
 			justify-content: space-evenly;
 		}
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 90.0625em) {
 			justify-content: space-between;
 		}
 	}
@@ -53,15 +53,19 @@
 		justify-content: flex-end;
 		width: 23.2%;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			width: 100%;
 		}
 
-		@media #{$medium-up} {
+		@media only screen and (min-width: 40.0625em) {
 			width: 49%;
 		}
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 64.0625em) {
+			width: 23.2%;
+		}
+
+		@media only screen and (min-width: 90.0625em) {
 			width: 23.2%;
 		}
 
@@ -78,6 +82,7 @@
 		p {
 			font-style: italic;
 			font-weight: 300;
+			color: $color-primary;
 		}
 	}
 

@@ -6701,11 +6701,11 @@ section .section-title {
     section .section-title {
       font-size: 2.5rem;
       margin-bottom: 3rem; } }
-  @media only screen and (min-width: 40.0625em) {
+  @media only screen and (min-width: 64.0625em) {
     section .section-title {
       font-size: 3.125rem;
       margin-bottom: 4rem; } }
-  @media only screen and (min-width: 64.0625em) {
+  @media only screen and (min-width: 90.0625em) {
     section .section-title {
       font-size: 3.75rem;
       margin-bottom: 5rem; } }
@@ -6728,7 +6728,7 @@ section p {
     @media only screen and (max-width: 40em) {
       .hero.hero-microsite .hero-heading {
         font-size: 3rem; } }
-    @media only screen and (min-width: 40.0625em) {
+    @media only screen and (min-width: 64.0625em) {
       .hero.hero-microsite .hero-heading {
         font-size: 4rem; } }
   .hero.hero-microsite img {
@@ -6928,42 +6928,46 @@ section p {
       width: 100%; } }
   @media only screen and (min-width: 40.0625em) {
     .tiles.photos .tile {
-      width: 49%; } }
+      width: 100%; } }
   @media only screen and (min-width: 64.0625em) {
+    .tiles.photos .tile {
+      width: 49%; } }
+  @media only screen and (min-width: 90.0625em) {
     .tiles.photos .tile {
       width: 24%; } }
   .tiles.photos .tile.short {
     height: 9.25rem; }
-    @media only screen and (min-width: 40.0625em) {
-      .tiles.photos .tile.short {
-        height: 9.25rem; } }
     @media only screen and (max-width: 40em) {
       .tiles.photos .tile.short {
         height: 20rem; } }
+    @media only screen and (min-width: 64.0625em) {
+      .tiles.photos .tile.short {
+        height: 9.25rem; } }
   .tiles.photos .tile.wide {
     width: 49%; }
-    @media only screen and (min-width: 40.0625em) {
-      .tiles.photos .tile.wide {
-        width: 49%; } }
     @media only screen and (max-width: 40em) {
       .tiles.photos .tile.wide {
         height: 20rem;
         width: 100%; } }
+    @media only screen and (min-width: 64.0625em) {
+      .tiles.photos .tile.wide {
+        width: 49%; } }
   .tiles.photos .tile.background-top {
     background-position: top; }
 
 .cards-slider {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  overflow: hidden; }
   @media only screen and (max-width: 40em) {
     .cards-slider {
       margin-bottom: 4rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .cards-slider {
-      margin-bottom: 6rem; } }
   @media only screen and (min-width: 64.0625em) {
     .cards-slider {
-      margin-bottom: 8rem; } }
+      margin-bottom: 6rem; } }
   @media only screen and (min-width: 90.0625em) {
+    .cards-slider {
+      margin-bottom: 8rem; } }
+  @media only screen and (min-width: 120.0625em) {
     .cards-slider {
       margin-bottom: 10rem; } }
   .cards-slider h3 {
@@ -7012,7 +7016,7 @@ section p {
       width: 10rem;
       z-index: 1;
       display: none; }
-      @media only screen and (min-width: 40.0625em) {
+      @media only screen and (min-width: 64.0625em) {
         .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
           display: block; } }
     .cards-slider .owl-carousel:before {
@@ -7043,6 +7047,7 @@ section p {
       position: absolute;
       width: 100%;
       z-index: 2; }
+      .cards-slider .owl-carousel .owl-nav > div,
       .cards-slider .owl-carousel .owl-nav button {
         align-self: center;
         position: absolute;
@@ -7051,45 +7056,60 @@ section p {
         -ms-transition: opacity 0.3s ease;
         -o-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease; }
+        .cards-slider .owl-carousel .owl-nav > div:hover,
         .cards-slider .owl-carousel .owl-nav button:hover {
           opacity: .7;
           background-color: transparent; }
+        .cards-slider .owl-carousel .owl-nav > div.disabled,
+        .cards-slider .owl-carousel .owl-nav > div *.disabled:hover,
         .cards-slider .owl-carousel .owl-nav button.disabled,
         .cards-slider .owl-carousel .owl-nav button *.disabled:hover {
           opacity: .5; }
       .cards-slider .owl-carousel .owl-nav span {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
         color: #fff;
-        font-size: 4rem; }
+        font-size: 4rem;
+        height: 4rem;
+        width: 2rem; }
       .cards-slider .owl-carousel .owl-nav .owl-prev {
+        background-color: transparent;
         left: 3rem; }
         @media only screen and (max-width: 40em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
             left: 1rem; }
             .cards-slider .owl-carousel .owl-nav .owl-prev img {
               max-width: 50%; } }
-        @media only screen and (min-width: 40.0625em) {
+        @media only screen and (min-width: 64.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
             left: 2rem; } }
-        @media only screen and (min-width: 64.0625em) {
+        @media only screen and (min-width: 90.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
             left: 3rem; }
             .cards-slider .owl-carousel .owl-nav .owl-prev img {
               max-width: 100%; } }
+        .cards-slider .owl-carousel .owl-nav .owl-prev span {
+          background-image: url("../../../assets/images/icons/ico-slider-prev.svg"); }
       .cards-slider .owl-carousel .owl-nav .owl-next {
+        background-color: transparent;
         right: 3rem; }
         @media only screen and (max-width: 40em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
             right: 1rem; }
             .cards-slider .owl-carousel .owl-nav .owl-next img {
               max-width: 50%; } }
-        @media only screen and (min-width: 40.0625em) {
+        @media only screen and (min-width: 64.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
             right: 2rem; } }
-        @media only screen and (min-width: 64.0625em) {
+        @media only screen and (min-width: 90.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
             right: 3rem; }
             .cards-slider .owl-carousel .owl-nav .owl-next img {
               max-width: 100%; } }
+        .cards-slider .owl-carousel .owl-nav .owl-next span {
+          background-image: url("../../../assets/images/icons/ico-slider-next.svg"); }
 
 .photo-content {
   margin-bottom: 10rem;
@@ -7097,13 +7117,13 @@ section p {
   @media only screen and (max-width: 40em) {
     .photo-content {
       margin-bottom: 4rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .photo-content {
-      margin-bottom: 6rem; } }
   @media only screen and (min-width: 64.0625em) {
     .photo-content {
-      margin-bottom: 8rem; } }
+      margin-bottom: 6rem; } }
   @media only screen and (min-width: 90.0625em) {
+    .photo-content {
+      margin-bottom: 8rem; } }
+  @media only screen and (min-width: 120.0625em) {
     .photo-content {
       margin-bottom: 10rem; } }
   .photo-content .segment {
@@ -7124,7 +7144,7 @@ section p {
     .photo-content .segment p {
       font-weight: 300; }
     .photo-content .segment .color-blue {
-      color: #009de6; }
+      color: #00add2; }
     .photo-content .segment .color-purple {
       color: #8097e3; }
     .photo-content .segment .color-orange {
@@ -7174,13 +7194,13 @@ section p {
   @media only screen and (max-width: 40em) {
     .cards {
       margin-bottom: 4rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .cards {
-      margin-bottom: 6rem; } }
   @media only screen and (min-width: 64.0625em) {
     .cards {
-      margin-bottom: 8rem; } }
+      margin-bottom: 6rem; } }
   @media only screen and (min-width: 90.0625em) {
+    .cards {
+      margin-bottom: 8rem; } }
+  @media only screen and (min-width: 120.0625em) {
     .cards {
       margin-bottom: 10rem; } }
   .cards .section-header h2 {
@@ -7193,10 +7213,10 @@ section p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 3rem; }
-    @media only screen and (min-width: 40.0625em) {
+    @media only screen and (min-width: 64.0625em) {
       .cards .cards-container {
         justify-content: space-evenly; } }
-    @media only screen and (min-width: 64.0625em) {
+    @media only screen and (min-width: 90.0625em) {
       .cards .cards-container {
         justify-content: space-between; } }
   .cards .card {
@@ -7217,6 +7237,9 @@ section p {
     @media only screen and (min-width: 64.0625em) {
       .cards .card {
         width: 23.2%; } }
+    @media only screen and (min-width: 90.0625em) {
+      .cards .card {
+        width: 23.2%; } }
     .cards .card img {
       align-self: baseline;
       margin-bottom: 1rem; }
@@ -7225,7 +7248,8 @@ section p {
       font-weight: normal; }
     .cards .card p {
       font-style: italic;
-      font-weight: 300; }
+      font-weight: 300;
+      color: #3c4650; }
   .cards .cards-cta a {
     border-bottom: 1px solid #00add2;
     color: #00add2;
@@ -7252,15 +7276,15 @@ section p {
     .map {
       margin-bottom: 4rem;
       height: auto; } }
-  @media only screen and (min-width: 40.0625em) {
+  @media only screen and (min-width: 64.0625em) {
     .map {
       margin-bottom: 6rem;
       height: auto; } }
-  @media only screen and (min-width: 64.0625em) {
+  @media only screen and (min-width: 90.0625em) {
     .map {
       margin-bottom: 8rem;
       height: 30rem; } }
-  @media only screen and (min-width: 90.0625em) {
+  @media only screen and (min-width: 120.0625em) {
     .map {
       margin-bottom: 10rem; } }
   .map > .row {
@@ -7271,10 +7295,10 @@ section p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-    @media only screen {
+    @media only screen and (max-width: 40.0625em) {
       .map .map-segment {
         height: 30rem; } }
-    @media only screen and (min-width: 64.0625em) {
+    @media only screen and (min-width: 90.0625em) {
       .map .map-segment {
         height: 100%; } }
     .map .map-segment.hoverable {
@@ -7289,22 +7313,22 @@ section p {
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-      @media only screen {
+      @media only screen and (max-width: 40.0625em) {
         .map .map-segment.hoverable {
           position: relative;
           width: 100%;
           height: 30rem; } }
-      @media only screen and (min-width: 64.0625em) {
+      @media only screen and (min-width: 90.0625em) {
         .map .map-segment.hoverable {
           position: absolute;
           width: 50%;
           height: 100%; } }
-      @media only screen {
+      @media only screen and (max-width: 40.0625em) {
         .map .map-segment.hoverable:hover {
           box-shadow: none;
           top: auto;
           width: 100%; } }
-      @media only screen and (min-width: 64.0625em) {
+      @media only screen and (min-width: 90.0625em) {
         .map .map-segment.hoverable:hover {
           box-shadow: -8px 0px 14px #aaa;
           height: 105%;
@@ -7331,13 +7355,13 @@ section p {
   @media only screen and (max-width: 40em) {
     .events {
       margin-bottom: 4rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .events {
-      margin-bottom: 6rem; } }
   @media only screen and (min-width: 64.0625em) {
     .events {
-      margin-bottom: 8rem; } }
+      margin-bottom: 6rem; } }
   @media only screen and (min-width: 90.0625em) {
+    .events {
+      margin-bottom: 8rem; } }
+  @media only screen and (min-width: 120.0625em) {
     .events {
       margin-bottom: 10.5rem; } }
   .events .section-title {
@@ -7414,20 +7438,20 @@ section p {
   @media only screen and (max-width: 40em) {
     .awards.non-cycle {
       margin-bottom: 4.5rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .awards.non-cycle {
-      margin-bottom: 6.5rem; } }
   @media only screen and (min-width: 64.0625em) {
     .awards.non-cycle {
-      margin-bottom: 8.5rem; } }
+      margin-bottom: 6.5rem; } }
   @media only screen and (min-width: 90.0625em) {
+    .awards.non-cycle {
+      margin-bottom: 8.5rem; } }
+  @media only screen and (min-width: 120.0625em) {
     .awards.non-cycle {
       margin-bottom: 9.5rem; } }
   .awards.non-cycle span {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    @media only screen and (min-width: 64.0625em) {
+    @media only screen and (min-width: 90.0625em) {
       .awards.non-cycle span {
         margin-bottom: 1.5rem; } }
   .awards.non-cycle .awards-container {
@@ -7437,8 +7461,11 @@ section p {
         column-count: 1; } }
     @media only screen and (min-width: 40.0625em) {
       .awards.non-cycle .awards-container {
-        column-count: 3; } }
+        column-count: 2; } }
     @media only screen and (min-width: 64.0625em) {
+      .awards.non-cycle .awards-container {
+        column-count: 3; } }
+    @media only screen and (min-width: 90.0625em) {
       .awards.non-cycle .awards-container {
         column-count: 4; } }
   .awards.non-cycle .glassdoor {

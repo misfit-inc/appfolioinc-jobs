@@ -11,20 +11,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 
 	<!-- Foundation -->
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/motion-ui.css">
+	<link rel="stylesheet" type="text/css" href="./public/assets/css/motion-ui.css">
 
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/owl.carousel.min.css">
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="./public/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/assets/css/owl.theme.default.css">
 
-	<!-- Styles -->
 	<!-- style.css also contains the compilation of foundation 5.5.3 -->
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/style.css">
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/media.css">
+	<link rel="stylesheet" type="text/css" href="./public/assets/css/style.css">
 
 	<!-- Now using the site's compiled CSS instead -->
-	<link rel="stylesheet" type="text/css" href="./assets/dist/css/appfolio.css">
+	<link rel="stylesheet" type="text/css" href="./public/assets/css/appfolio.css">
 
 	<!-- Wistia -->
 	<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
@@ -229,7 +226,7 @@
 					<p class="large-8">We're revolutionizing the way companies grow their businesses, and we're always looking for great engineers who will
 					make an impact every day. Browse our open positions to find the perfect fit for you.</p>
 				</div>
-				<div class="cards-container large-12 medium-12 small-11 small-centered">
+				<div class="cards-container large-12 medium-11 medium-centered small-11 small-centered">
 					<div class="card inview mui-enter fade-in ease slow anim-bottom-top" data-animation="mui-enter-active">
 						<img src="./assets/images/icons/ico-software-engineer-intern.svg" alt="Software Engineer Intern Icon" aria-hidden="true">
 						<h2>Software Engineer Intern</h2>
@@ -442,7 +439,7 @@
 		</div>
 	</footer>
 
-	<div id="tile-1" class="tiles tile-1 afmodal">
+	<div id="tile-1" class="afmodal">
 		<div class="x-content">
 			<div class="row">
 				<a class="close-af-modal">&#215;</a>
@@ -474,22 +471,21 @@
 		</div>
 	</div>
 
-	<!-- Pending Wistia Video -->
-	<!-- <div id="map-segment-1" class="afmodal">
+	<div id="map-segment-1" class="afmodal">
 		<div class="x-content">
 			<div class="row">
 				<a class="close-af-modal">&#215;</a>
 			</div>
 			<div class="row">
-				<div id="wistia_lnbjggy0gw" class="wistia_embed">&nbsp;</div>
+				<div id="wistia_giebcxzdou" class="wistia_embed">&nbsp;</div>
 				<script>
-					wistiaEmbed = Wistia.embed("lnbjggy0gw", {
+					wistiaEmbed = Wistia.embed("giebcxzdou", {
 						videoFoam: true
 					});
 				</script>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div id="why-appfolio" class="afmodal">
 		<div class="x-content">
@@ -508,21 +504,19 @@
 		</div>
 	</div>
 
-	<!-- JS - Already found in appfolioinc.com -->
-	<script src="./assets/dist/js/jquery.min.js" defer></script>
-	<script src="./assets/dist/js/owl.carousel.min.js" defer></script>
-	<script src="./assets/javascripts/onready.js" defer></script>
-
-	<!-- JS - Added dist -->
-	<script src="./assets/dist/js/isotope.pkgd.min.js" defer></script>
-	<script src="./assets/dist/js/motion-ui.js" defer></script>
-	<script src="./assets/dist/js/happiness-steps.js" defer></script>
-	<script src="./assets/dist/js/lottie.min.js" defer></script>
-	<script src="./assets/dist/js/jquery.waypoints.min.js" defer></script>
-	<script src="./assets/dist/js/inview.min.js" defer></script>
-
-	<!-- JS - Added scripts -->
-	<script src="./assets/javascripts/scripts.js" defer></script>
+	<!-- JS - No need to import - Already found in appfolioinc.com -->
+	<script src="./public/assets/js/jquery.min.js" defer></script>
+	<script src="./public/assets/js/onready.js" defer></script>
+	
+	<!-- JS - These are JS that's needed for the page to fully function -->
+	<script src="./public/assets/js/owl.carousel.js" defer></script>
+	<script src="./public/assets/js/isotope.pkgd.min.js" defer></script>
+	<script src="./public/assets/js/motion-ui.js" defer></script>
+	<script src="./public/assets/js/happiness-steps.js" defer></script>
+	<script src="./public/assets/js/lottie.min.js" defer></script>
+	<script src="./public/assets/js/jquery.waypoints.1.min.js" defer></script>
+	<script src="./public/assets/js/jquery.waypoints.2.inview.min.js" defer></script>
+	<script src="./public/assets/js/scripts.js" defer></script>
 
 </body>
 </html>

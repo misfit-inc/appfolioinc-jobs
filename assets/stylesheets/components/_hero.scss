@@ -10,11 +10,11 @@
 			font-size: 5rem;
 			text-shadow: none;
 
-			@media #{$small-only} {
+			@media only screen and (max-width: 40em) {
 				font-size: 3rem;
 			}
 
-			@media #{$medium-up} {
+			@media only screen and (min-width: 64.0625em) {
 				font-size: 4rem;
 			}
 		}
@@ -59,7 +59,7 @@
 					text-decoration: none;
 				}
 
-				@media #{$small-only} {
+				@media only screen and (max-width: 40em) {
 					clear: both;
 					margin-left: 0;
 				}

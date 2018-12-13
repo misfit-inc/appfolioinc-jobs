@@ -1,22 +1,23 @@
 .cards-slider {
 	margin-bottom: 10rem;
-
-	@media #{$small-only} {
+	overflow: hidden;
+	
+	@media only screen and (max-width: 40em) {
 		margin-bottom: 4rem;
 	}
 
-	@media #{$medium-up} {
+	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6rem;
 	}
 
-	@media #{$large-up} {
+	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8rem;
 	}
 
-	@media #{$xlarge-up} {
+	@media only screen and (min-width: 120.0625em) {
 		margin-bottom: 10rem;
 	}
-	
+
 	h3 {
 		color: #fff;
 		font-size: rem-calc(28);
@@ -97,7 +98,7 @@
 			z-index: 1;
 			display: none;
 
-			@media #{$medium-up} {
+			@media only screen and (min-width: 64.0625em) {
 				display: block;
 			}
 		}
@@ -135,6 +136,7 @@
 			width: 100%;
 			z-index: 2;
 
+			> div,
 			button {
 				align-self: center;
 				position: absolute;
@@ -153,14 +155,21 @@
 			}
 
 			span {
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				display: inline-block;
 				color: #fff;
 				font-size: 4rem;
+				height: 4rem;
+				width: 2rem;
 			}
 
 			.owl-prev {
+				background-color: transparent;
 				left: 3rem;
 
-				@media #{$small-only} {
+				@media only screen and (max-width: 40em) {
 					left: 1rem;
 
 					img {
@@ -168,23 +177,28 @@
 					}
 				}
 
-				@media #{$medium-up} {
+				@media only screen and (min-width: 64.0625em) {
 					left: 2rem;
 				}
 
-				@media #{$large-up} {
+				@media only screen and (min-width: 90.0625em) {
 					left: 3rem;
 
 					img {
 						max-width: 100%;
 					}
 				}
+
+				span {
+					background-image: url('../../../assets/images/icons/ico-slider-prev.svg');
+				}
 			}
 
 			.owl-next {
+				background-color: transparent;
 				right: 3rem;
 
-				@media #{$small-only} {
+				@media only screen and (max-width: 40em) {
 					right: 1rem;
 
 					img {
@@ -192,16 +206,20 @@
 					}
 				}
 
-				@media #{$medium-up} {
+				@media only screen and (min-width: 64.0625em) {
 					right: 2rem;
 				}
 
-				@media #{$large-up} {
+				@media only screen and (min-width: 90.0625em) {
 					right: 3rem;
 
 					img {
 						max-width: 100%;
 					}
+				}
+
+				span {
+					background-image: url('../../../assets/images/icons/ico-slider-next.svg');
 				}
 			}
 		}

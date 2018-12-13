@@ -1,19 +1,19 @@
 .events {
 	margin-bottom: 10.5rem;
 
-	@media #{$small-only} {
+	@media only screen and (max-width: 40em) {
 		margin-bottom: 4rem;
 	}
 
-	@media #{$medium-up} {
+	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6rem;
 	}
 
-	@media #{$large-up} {
+	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8rem;
 	}
 
-	@media #{$xlarge-up} {
+	@media only screen and (min-width: 120.0625em) {
 		margin-bottom: 10.5rem;
 	}
 
@@ -26,7 +26,7 @@
 		display: flex;
 		position: relative;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			flex-flow: column;
 		}
 	}
@@ -43,10 +43,10 @@
 		padding: 2rem 3rem;
 		right: 0;
 
-		@media #{$small-only} {
-		    float: none;
-		    right: auto;
-		    position: relative;
+		@media only screen and (max-width: 40em) {
+			float: none;
+			right: auto;
+			position: relative;
 			left: auto;
 		}
 
@@ -65,18 +65,18 @@
 			line-height: 2;
 		}
 	}
-	
+
 	.event-events {
 		margin-top: 4rem;
 		display: flex;
 		justify-content: space-between;
 		flex: 1;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			display: block;
 			margin-top: 1.5rem;
 		}
-		
+
 		&:before,
 		&:after {
 			display: none;
@@ -88,7 +88,7 @@
 		padding: 7rem 1.5rem 1.5rem;
 		width: 32%;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			width: 100%;
 			margin-bottom: 1rem;
 		}

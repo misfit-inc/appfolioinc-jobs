@@ -97,6 +97,7 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		items: 5,
 		loop: true,
 		nav: true,
+		navElement: 'div',
 		navText: ['<img src="./assets/images/icons/ico-slider-prev.svg">', '<img src="./assets/images/icons/ico-slider-next.svg">'],
 		dots: false,
 		responsive: {

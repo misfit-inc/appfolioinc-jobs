@@ -4,19 +4,19 @@
 	padding-bottom: 8rem;
 	margin-bottom: 9.5rem;
 
-	@media #{$small-only} {
+	@media only screen and (max-width: 40em) {
 		margin-bottom: 4.5rem;
 	}
 
-	@media #{$medium-up} {
+	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6.5rem;
 	}
 
-	@media #{$large-up} {
+	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8.5rem;
 	}
 
-	@media #{$xlarge-up} {
+	@media only screen and (min-width: 120.0625em) {
 		margin-bottom: 9.5rem;
 	}
 
@@ -25,7 +25,7 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 90.0625em) {
 			margin-bottom: 1.5rem;
 		}
 
@@ -37,17 +37,21 @@
 	}
 
 	.awards-container {
-		column-count: 4;		
+		column-count: 4;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			column-count: 1;
 		}
 
-		@media #{$medium-up} {
+		@media only screen and (min-width: 40.0625em) {
+			column-count: 2;
+		}
+
+		@media only screen and (min-width: 64.0625em) {
 			column-count: 3;
 		}
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 90.0625em) {
 			column-count: 4;
 		}
 	}

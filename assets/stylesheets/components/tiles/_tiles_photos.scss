@@ -16,41 +16,45 @@
 		margin-bottom: .8rem;
 		width: 24%;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			height: 20rem;
 			width: 100%;
 		}
 
-		@media #{$medium-up} {
+		@media only screen and (min-width: 40.0625em) {
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 64.0625em) {
 			width: 49%;
 		}
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 90.0625em) {
 			width: 24%;
 		}
 
 		&.short {
 			height: 9.25rem;
 
-			@media #{$medium-up} {
-				height: 9.25rem;
+			@media only screen and (max-width: 40em) {
+				height: 20rem;
 			}
 
-			@media #{$small-only} {
-				height: 20rem;
+			@media only screen and (min-width: 64.0625em) {
+				height: 9.25rem;
 			}
 		}
 
 		&.wide {
 			width: 49%;
 
-			@media #{$medium-up} {
-				width: 49%;
-			}
-
-			@media #{$small-only} {
+			@media only screen and (max-width: 40em) {
 				height: 20rem;
 				width: 100%;
+			}
+
+			@media only screen and (min-width: 64.0625em) {
+				width: 49%;
 			}
 		}
 

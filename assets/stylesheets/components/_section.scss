@@ -5,7 +5,7 @@ section {
 			font-weight: 300;
 		}
 	}
-	
+
 	.section-title {
 		color: $color-primary;
 		font-size: rem-calc(66);
@@ -13,17 +13,17 @@ section {
 		margin-bottom: 5rem;
 		text-align: center;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			font-size: rem-calc(40);
 			margin-bottom: 3rem;
 		}
 
-		@media #{$medium-up} {
+		@media only screen and (min-width: 64.0625em) {
 			font-size: rem-calc(50);
 			margin-bottom: 4rem;
 		}
 
-		@media #{$large-up} {
+		@media only screen and (min-width: 90.0625em) {
 			font-size: rem-calc(60);
 			margin-bottom: 5rem;
 		}
@@ -33,7 +33,7 @@ section {
 		font-size: rem-calc(17);
 		font-weight: 300;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			font-size: rem-calc(14);
 		}
 	}

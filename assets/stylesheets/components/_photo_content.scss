@@ -2,31 +2,31 @@
 	margin-bottom: 10rem;
 	overflow: hidden;
 
-	@media #{$small-only} {
+	@media only screen and (max-width: 40em) {
 		margin-bottom: 4rem;
 	}
 
-	@media #{$medium-up} {
+	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6rem;
 	}
 
-	@media #{$large-up} {
+	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8rem;
 	}
 
-	@media #{$xlarge-up} {
+	@media only screen and (min-width: 120.0625em) {
 		margin-bottom: 10rem;
 	}
 
 	.segment {
 		display: flex;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			display: block;
 			margin-bottom: 3rem;
 		}
 
-		& > div {
+		&>div {
 			align-self: center;
 		}
 
@@ -47,7 +47,7 @@
 		}
 
 		.color-blue {
-			color: $color-blue;
+			color: $color-lighter-blue;
 		}
 
 		.color-purple {
@@ -92,7 +92,7 @@
 			margin-left: -10%;
 			padding-left: 0;
 
-			@media #{$small-only} {
+			@media only screen and (max-width: 40em) {
 				padding: 0;
 				margin: 0;
 			}
@@ -103,7 +103,7 @@
 			padding-right: 0;
 			text-align: right;
 
-			@media #{$small-only} {
+			@media only screen and (max-width: 40em) {
 				padding: 0;
 				margin: 0;
 				text-align: left;
@@ -114,7 +114,7 @@
 	.connector {
 		margin: 3rem auto;
 
-		@media #{$small-only} {
+		@media only screen and (max-width: 40em) {
 			display: none;
 		}
 
