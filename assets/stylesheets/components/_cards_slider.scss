@@ -91,12 +91,12 @@
 		&:before,
 		&:after {
 			content: '';
+			display: none;
 			height: 100%;
 			position: absolute;
 			top: 0;
 			width: 10rem;
 			z-index: 1;
-			display: none;
 
 			@media only screen and (min-width: 64.0625em) {
 				display: block;
@@ -158,11 +158,16 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: cover;
-				display: inline-block;
 				color: #fff;
-				font-size: 4rem;
+				display: inline-block;
 				height: 4rem;
+				font-size: 4rem;
 				width: 2rem;
+
+				@media only screen and (max-width: 40em) {
+					height: 2rem;
+					width: 1rem;
+				}
 			}
 
 			.owl-prev {
