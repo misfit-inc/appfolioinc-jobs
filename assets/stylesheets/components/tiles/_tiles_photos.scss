@@ -15,9 +15,9 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		height: 19.3rem;
+		height: 28.95rem;
 		margin-bottom: .8rem;
-		width: 24%;
+		width: 25%;
 
 		@media only screen and (max-width: 40em) {
 			height: 20rem;
@@ -33,18 +33,18 @@
 		}
 
 		@media only screen and (min-width: 90.0625em) {
-			width: 24%;
+			width: 24.6%;
 		}
 
 		&.short {
-			height: 9.25rem;
+			height: 14.05rem;
 
 			@media only screen and (max-width: 40em) {
-				height: 20rem;
+				height: 30rem;
 			}
 
 			@media only screen and (min-width: 64.0625em) {
-				height: 9.25rem;
+				height: 14.05rem;
 			}
 		}
 
