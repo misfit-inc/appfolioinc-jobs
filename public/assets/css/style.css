@@ -6752,10 +6752,9 @@ section p {
       border-bottom: 1px solid #fff;
       color: #fff;
       font-size: 0.9375rem;
-      margin-left: 1.5rem;
       padding-bottom: .2rem;
       position: relative;
-      top: -0.2rem;
+      margin-left: 0.5rem;
       -webkit-transition: border-bottom-color 0.3s ease;
       -moz-transition: border-bottom-color 0.3s ease;
       -ms-transition: border-bottom-color 0.3s ease;
@@ -6919,6 +6918,9 @@ section p {
     visibility: hidden; }
 
 .tiles.photos .tile {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 19.3rem;
   margin-bottom: .8rem;
   width: 24%; }
@@ -7010,12 +7012,12 @@ section p {
     display: flex; }
     .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
       content: '';
+      display: none;
       height: 100%;
       position: absolute;
       top: 0;
       width: 10rem;
-      z-index: 1;
-      display: none; }
+      z-index: 1; }
       @media only screen and (min-width: 64.0625em) {
         .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
           display: block; } }
@@ -7069,11 +7071,15 @@ section p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        display: inline-block;
         color: #fff;
-        font-size: 4rem;
+        display: inline-block;
         height: 4rem;
+        font-size: 4rem;
         width: 2rem; }
+        @media only screen and (max-width: 40em) {
+          .cards-slider .owl-carousel .owl-nav span {
+            height: 2rem;
+            width: 1rem; } }
       .cards-slider .owl-carousel .owl-nav .owl-prev {
         background-color: transparent;
         left: 3rem; }
@@ -7295,9 +7301,9 @@ section p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-    @media only screen and (max-width: 40.0625em) {
+    @media only screen and (max-width: 40em) {
       .map .map-segment {
-        height: 30rem; } }
+        height: 20rem; } }
     @media only screen and (min-width: 90.0625em) {
       .map .map-segment {
         height: 100%; } }
@@ -7313,11 +7319,11 @@ section p {
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-      @media only screen and (max-width: 40.0625em) {
+      @media only screen and (max-width: 40em) {
         .map .map-segment.hoverable {
           position: relative;
           width: 100%;
-          height: 30rem; } }
+          height: 20rem; } }
       @media only screen and (min-width: 90.0625em) {
         .map .map-segment.hoverable {
           position: absolute;
@@ -7374,7 +7380,16 @@ section p {
       .events .event {
         flex-flow: column; } }
   .events .event-photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 30rem; }
+    @media only screen and (max-width: 40em) {
+      .events .event-photo {
+        height: 15rem; } }
+    @media only screen and (min-width: 40.0625em) {
+      .events .event-photo {
+        height: 20rem; } }
   .events .event-detail {
     align-self: center;
     background-color: #fff;
