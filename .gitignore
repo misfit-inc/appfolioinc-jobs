@@ -1,0 +1,44 @@
+.htaccess
+
+# Custom individual ignores
+tmp/
+blogs/
+.DS_Store
+test/
+/cache
+cache/
+node_modules/
+
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.localized
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+#############################
+# Logs, databases and misc. #
+#############################
+*.log
+*.sql
+*.sqlite
+*.sass-cache
+
+############
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
