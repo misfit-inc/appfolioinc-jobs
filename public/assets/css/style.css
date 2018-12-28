@@ -7321,7 +7321,7 @@ section p {
         height: 20rem; } }
     @media only screen and (min-width: 90.0625em) {
       .map .map-segment {
-        height: 100%; } }
+        height: 30rem; } }
     .map .map-segment.hoverable {
       box-shadow: 0 0 0 transparent;
       height: 100%;
@@ -7440,7 +7440,8 @@ section p {
             top: 12%; } }
         @media only screen and (min-width: 90.0625em) {
           .map .map-pins .map-pin.santa-barbara {
-            top: 18%; } }
+            top: 18%;
+            left: 34%; } }
   .map .map-detail {
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
@@ -7512,6 +7513,10 @@ section p {
       @media only screen and (min-width: 64.0625em) {
         .map .map-detail p {
           font-size: 1rem; } }
+      @media only screen and (min-width: 64.0625em) {
+        .map .map-detail p {
+          font-size: 1.12rem;
+          line-height: 1.5; } }
 
 .events {
   margin-bottom: 10.5rem; }
