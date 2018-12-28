@@ -284,11 +284,31 @@
 		<section class="map inview mui-enter fade-in ease slow transition-delay-500" data-animation="mui-enter-active">
 			<div class="x-content wide row">
 				<div class="map-segment left large-6 medium-12 small-12" style="background-image: url('./assets/images/location-map.jpg');">
-					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/location-map.jpg">
+					<div class="map-pins">
+						<div class="map-pin santa-barbara" data-hover="santa-barbara">
+							<i class="fas fa-map-marker-alt"></i>
+							<h3>Santa Barbara</h3>
+						</div>
+						<div class="map-pin san-diego" data-hover="san-diego">
+							<h3>San Diego</h3>
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/tile-7.jpg">
 				</div>
-				<div class="map-segment hoverable flex right large-6 medium-12 small-12" style="background-image: url('./assets/images/appfolio-video-poster.jpg');">
-					<a class="open-afmodal" href="#" data-modal-identifier="map-segment-1"><img class="play-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
-					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/appfolio-video-poster.jpg">
+				<div class="map-segment hoverable flex right large-6 medium-12 small-12" style="background-image: url('./assets/images/tile-7.jpg');">
+					
+					<img class="show-for-sr" alt="AppFolio Santa Barbara Location Map" src="./assets/images/tile-7.jpg">
+					<div class="map-detail santa-barbara">
+						<h2>Program in Paradise</h2>
+						<h3>Santa Barbara</h3>
+						<p>Just 90 miles north of Los Angeles and nestled between the Pacific Ocean and the Santa Ynez Mountains, Santa Barbara is a small slice of heaven bursting with life, energy, beauty and culture. AppFolians here enjoy nearly perfect year-round climate, pristine beaches, frequent festivals, and an unbeatable work-life balance.</p>
+					</div>
+					<div class="map-detail san-diego">
+						<h2>Program in Paradise</h2>
+						<h3>San Diego</h3>
+						<p>San Diego boasts world-class attractions and a thriving urban core, complete with a sophisticated art, dining and nightlife scene. With 70 miles of stunning coastline and a daily forecast of 70°F and sunny year-round, it’s easy to understand why AppFolians love to call this city home.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -508,6 +528,9 @@
 	<script src="./public/assets/js/onready.js" defer></script>
 	
 	<!-- JS - These are JS that's needed for the page to fully function -->
+	<!-- Font Awesome Icons - Essential for loading the map pin icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+	 crossorigin="anonymous"></script>
 	<script src="./public/assets/js/owl.carousel.js" defer></script>
 	<script src="./public/assets/js/isotope.pkgd.min.js" defer></script>
 	<script src="./public/assets/js/motion-ui.js" defer></script>

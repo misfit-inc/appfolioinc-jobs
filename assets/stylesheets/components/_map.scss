@@ -1,21 +1,24 @@
 .map {
-	height: 30rem;
+	height: 30.1rem;
 	position: relative;
 	margin-bottom: 10rem;
 
 	@media only screen and (max-width: 40em) {
-		margin-bottom: 4rem;
-		height: auto;
+		margin: 0 auto 4rem;
+		max-width: 25em;
+	}
+	@media only screen and (min-width: 40em) {
+		margin: 0 auto 6rem;
+		max-width: 30em;
 	}
 
 	@media only screen and (min-width: 64.0625em) {
 		margin-bottom: 6rem;
-		height: auto;
+		max-width: 40em;
 	}
 
 	@media only screen and (min-width: 90.0625em) {
 		margin-bottom: 8rem;
-		height: 30rem;
 	}
 
 	@media only screen and (min-width: 120.0625em) {
@@ -28,12 +31,17 @@
 	}
 
 	.map-segment {
-		height: 100%;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		height: 100%;
+		position: relative;
 
 		@media only screen and (max-width: 40em) {
+			height: 20rem;
+		}
+
+		@media only screen and (min-width: 64.0625em) {
 			height: 20rem;
 		}
 
@@ -44,7 +52,6 @@
 		&.hoverable {
 			box-shadow: 0 0 0 transparent;
 			height: 100%;
-			position: absolute;
 			right: 0;
 			top: 0;
 			width: 50%;
@@ -52,30 +59,23 @@
 			@include transition(all .4s ease);
 
 			@media only screen and (max-width: 40em) {
+				width: 100%;
+			}
+
+			@media only screen and (min-width: 40em) {
 				position: relative;
 				width: 100%;
 				height: 20rem;
 			}
 
-			@media only screen and (min-width: 90.0625em) {
-				position: absolute;
+			@media only screen and (min-width: 64.0625em) {
 				width: 50%;
-				height: 100%;
+				height: 20rem;
 			}
 
-			&:hover {
-				@media only screen and (max-width: 40.0625em) {
-					box-shadow: none;
-					top: auto;
-					width: 100%;
-				}
-
-				@media only screen and (min-width: 90.0625em) {
-					box-shadow: -8px 0px 14px #aaa;
-					height: 105%;
-					top: -2.5%;
-					width: 52.5%;
-				}
+			@media only screen and (min-width: 90.0625em) {
+				width: 50%;
+				height: 100%;
 			}
 		}
 
@@ -97,6 +97,111 @@
 
 				@include transition(opacity .4s ease);
 			}
+		}
+	}
+
+	.map-pins {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+
+		.map-pin {
+			color: $color-blue;
+			position: absolute;
+
+			@include transition(color .4s ease);
+			
+			&:hover {
+				cursor: pointer;
+
+				svg {
+					color: #fff;
+				}
+
+				h3 {
+					background-color: #fff;
+					color: $color-blue;
+				}
+			}
+
+			svg {
+				font-size: 3.4rem;
+				margin-right: .5rem;
+
+				@include transition(color .4s ease);
+			}
+
+			h3 {
+				background-color: $color-blue;
+				border-radius: 50px;
+				color: #fff;
+				display: inline-block;
+				font-size: 1rem;
+				padding: 1rem 2rem;
+				vertical-align: bottom;
+
+				@include transition(color .4s ease, background-color .4s ease);
+			}
+
+			&.san-diego {
+				left: 16.2rem;
+				top: 15.7rem;
+			}
+
+			&.santa-barbara {
+				left: 34%;
+				top: 18%;
+
+				@media only screen and (max-width: 1024px) {
+					top: calc(18% + 2px);
+				}
+
+				@media only screen and (min-width: 40em) {
+					top: 15%
+				}
+
+				@media only screen and (min-width: 64.0625em) {
+					top: calc(18% + 2px);
+				}
+
+				@media only screen and (min-width: 90.0625em) {
+					top: 18%;
+				}
+			}
+		}
+	}
+
+	.map-detail {
+		background-color: rgba(0, 0, 0, .8);
+		height: 100%;
+		opacity: 0;
+		padding: 6rem;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		z-index: 2;
+
+		@include transition(opacity .6s ease);
+
+		&.active {
+			opacity: 1;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 2.3rem;
+			font-weight: 600;
+			margin-bottom: 2rem;
+		}
+
+		h3 {
+			color: #fff;
+			font-size: 1.8rem;
+		}
+
+		p {
+			color: #fff;
+			line-height: 1.5;
 		}
 	}
 }
