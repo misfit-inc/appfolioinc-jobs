@@ -188,7 +188,7 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 
 	// This controls the hover trigger for the map pins
 	// This is also activated depending on the window screen width
-	if ($(window).height() > 913) {
+	if ($(window).width() > 913) {
 		$('.map-pin').hover(function () {
 			var hover_data = $(this).data('hover');
 			$('.map-detail.' + hover_data).addClass('active');
