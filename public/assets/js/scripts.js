@@ -196,7 +196,8 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	} else {
 		$('.map-pin').click(function () {
 			var hover_data = $(this).data('hover');
-			$('.map-detail.' + hover_data).removeClass('active').toggleClass('active');
+			$('.map-detail').removeClass('active');
+			$('.map-detail.' + hover_data).toggleClass('active');
 		});
 	}
 
