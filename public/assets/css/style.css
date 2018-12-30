@@ -7255,7 +7255,8 @@ section p {
       top: 0; }
     .cards .card h2 {
       font-size: 1.675rem;
-      font-weight: normal; }
+      font-weight: normal;
+      width: 100%; }
       @media only screen and (max-width: 40em) {
         .cards .card h2 {
           font-size: 1.5rem; } }
