@@ -7229,10 +7229,10 @@ section p {
     border: 1px solid #3c4650;
     border-radius: 1rem;
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap;
+    justify-content: flex-end;
     margin-bottom: 1.5rem;
     padding: 4rem 2rem 1rem;
-    justify-content: flex-end;
     width: 23.2%; }
     @media only screen and (max-width: 40em) {
       .cards .card {
@@ -7247,11 +7247,30 @@ section p {
       .cards .card {
         width: 23.2%; } }
     .cards .card img {
-      align-self: baseline;
-      margin-bottom: 1rem; }
+      align-self: flex-start;
+      display: inline-block;
+      left: -50%;
+      margin-bottom: 1rem;
+      position: relative;
+      top: 0; }
     .cards .card h2 {
       font-size: 1.675rem;
       font-weight: normal; }
+      @media only screen and (max-width: 40em) {
+        .cards .card h2 {
+          font-size: 1.5rem; } }
+      @media only screen and (min-width: 40.0625em) {
+        .cards .card h2 {
+          font-size: 1.5rem; } }
+      @media only screen and (min-width: 64.0625em) {
+        .cards .card h2 {
+          font-size: 1.675rem; } }
+      @media only screen and (min-width: 1024px) {
+        .cards .card h2 {
+          font-size: 1.5rem; } }
+      @media only screen and (min-width: 90.0625em) {
+        .cards .card h2 {
+          font-size: 1.675rem; } }
     .cards .card p {
       font-style: italic;
       font-weight: 300;
