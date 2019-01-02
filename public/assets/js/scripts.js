@@ -6,7 +6,7 @@ lottie.setQuality('high');
 var happiness_step_1_params = {
 	container: document.querySelector('.happiness-step-1'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_1,
 	rendererSettings: {
@@ -18,7 +18,7 @@ var happiness_step_1_params = {
 var happiness_step_2_1_params = {
 	container: document.querySelector('.happiness-step-2-1'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_2,
 	rendererSettings: {
@@ -30,7 +30,7 @@ var happiness_step_2_1_params = {
 var happiness_step_2_2_params = {
 	container: document.querySelector('.happiness-step-2-2'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_2,
 	rendererSettings: {
@@ -42,7 +42,7 @@ var happiness_step_2_2_params = {
 var happiness_step_3_params = {
 	container: document.querySelector('.happiness-step-3'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_3,
 	rendererSettings: {
@@ -54,7 +54,7 @@ var happiness_step_3_params = {
 var happiness_step_4_1_params = {
 	container: document.querySelector('.happiness-step-4-1'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_4,
 	rendererSettings: {
@@ -66,7 +66,7 @@ var happiness_step_4_1_params = {
 var happiness_step_4_2_params = {
 	container: document.querySelector('.happiness-step-4-2'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: false,
 	animationData: happiness_steps.step_4,
 	rendererSettings: {
