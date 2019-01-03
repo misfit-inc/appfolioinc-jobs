@@ -33,14 +33,6 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 3rem;
-
-		@media only screen and (min-width: 64.0625em) {
-			justify-content: space-evenly;
-		}
-
-		@media only screen and (min-width: 90.0625em) {
-			justify-content: space-between;
-		}
 	}
 
 	.card {

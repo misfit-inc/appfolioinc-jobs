@@ -7219,12 +7219,6 @@ section p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 3rem; }
-    @media only screen and (min-width: 64.0625em) {
-      .cards .cards-container {
-        justify-content: space-evenly; } }
-    @media only screen and (min-width: 90.0625em) {
-      .cards .cards-container {
-        justify-content: space-between; } }
   .cards .card {
     border: 1px solid #3c4650;
     border-radius: 1rem;
