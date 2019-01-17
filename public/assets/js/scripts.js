@@ -75,6 +75,68 @@ var happiness_step_4_2_params = {
 	}
 };
 
+var small_focused_teams_params = {
+	container: document.querySelector('.svg-small-focused-teams'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: false,
+	animationData: why_appfolio.small_focused_teams,
+	rendererSettings: {
+		progressiveLoad: true,
+		scaleMode: 'noScale',
+	}
+};
+
+var built_to_last_params = {
+	container: document.querySelector('.svg-built-to-last'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: false,
+	animationData: why_appfolio.built_to_last,
+	rendererSettings: {
+		progressiveLoad: true,
+		scaleMode: 'noScale',
+	}
+};
+
+var customer_first_engineering_params = {
+	container: document.querySelector('.svg-customer-first-engieneering'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: false,
+	animationData: why_appfolio.customer_first_engineering,
+	rendererSettings: {
+		progressiveLoad: true,
+		scaleMode: 'noScale',
+	}
+};
+
+var hard_problems_high_impact_params = {
+	container: document.querySelector('.svg-hard-problems-high-impact'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: false,
+	animationData: why_appfolio.hard_problems_high_impact,
+	rendererSettings: {
+		progressiveLoad: true,
+		scaleMode: 'noScale',
+	}
+
+
+};
+
+var program_in_paradise_params = {
+	container: document.querySelector('.svg-program-in-paradise'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: false,
+	animationData: why_appfolio.program_in_paradise,
+	rendererSettings: {
+		progressiveLoad: true,
+		scaleMode: 'noScale',
+	}
+};
+
 // Assign the lottie loadAnimation to variables
 var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	happiness_step_2_1_animation = lottie.loadAnimation(happiness_step_2_1_params),
@@ -82,12 +144,36 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	happiness_step_3_animation = lottie.loadAnimation(happiness_step_3_params),
 	happiness_step_4_1_animation = lottie.loadAnimation(happiness_step_4_1_params),
 	happiness_step_4_2_animation = lottie.loadAnimation(happiness_step_4_2_params);
+	
 
 // End animated SVG icons parameters
 
 // jQuery, if it exists will be passed to the function. 
 // $ is the name that variable will take in the scope of the function
 (function ($) {
+
+	function play_why_appfolio_animation(e) {
+
+		// if ($(e).find('.svg-small-focused-teams').length > 0) {
+		// 	lottie.loadAnimation(small_focused_teams_params).play();
+		// }
+
+		// if ($(e).find('.svg-built-to-last').length > 0) {
+		// 	lottie.loadAnimation(built_to_last_params).play();
+		// }
+
+		// if ($(e).find('.svg-customer-first-engieneering').length > 0) {
+		// 	lottie.loadAnimation(customer_first_engineering_params).play();
+		// }
+
+		// if ($(e).find('.svg-hard-problems-high-impact').length > 0) {
+		// 	lottie.loadAnimation(hard_problems_high_impact_params).play();
+		// }
+
+		// if ($(e).find('.svg-program-in-paradise').length > 0) {
+		// 	lottie.loadAnimation(program_in_paradise_params).play();
+		// }
+	}
 
 	$("#owl-cards").owlCarousel({
 		center: true,
@@ -113,6 +199,13 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 			1280: {
 				items: 4
 			}
+		},
+		onInitialized: function(){
+			lottie.loadAnimation(small_focused_teams_params).play();
+			lottie.loadAnimation(built_to_last_params).play();
+			lottie.loadAnimation(customer_first_engineering_params).play();
+			lottie.loadAnimation(hard_problems_high_impact_params).play();
+			lottie.loadAnimation(program_in_paradise_params).play();
 		}
 	});
 
@@ -177,6 +270,46 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		});
 	});
 
+	// document.addEventListener("DOMContentLoaded", function () {
+
+	// 	let owl_cards = [].slice.call(document.querySelectorAll("#owl-cards"));
+	// 	let active = false;
+
+	// 	const why_appfolio_animation_load = function () {
+	// 		if (active === false) {
+	// 			active = true;
+
+	// 			setTimeout(function () {
+	// 				owl_cards.forEach(function (owl_card) {
+	// 					if ((owl_card.getBoundingClientRect().top <= window.innerHeight && owl_card.getBoundingClientRect().bottom >= 0) && getComputedStyle(owl_card).display !== "none") {
+
+	// 						lottie.loadAnimation(small_focused_teams_params).play();
+	// 						lottie.loadAnimation(built_to_last_params).play();
+	// 						lottie.loadAnimation(customer_first_engineering_params).play();
+	// 						lottie.loadAnimation(hard_problems_high_impact_params).play();
+	// 						lottie.loadAnimation(program_in_paradise_params).play();
+
+	// 						owl_cards = owl_cards.filter(function (card) {
+	// 							return card !== owl_card;
+	// 						});
+
+	// 						if (owl_cards.length === 0) {
+	// 							document.removeEventListener("scroll", why_appfolio_animation_load);
+	// 							window.removeEventListener("resize", why_appfolio_animation_load);
+	// 							window.removeEventListener("orientationchange", why_appfolio_animation_load);
+	// 						}
+	// 					}
+	// 				});
+
+	// 				active = false;
+	// 			}, 200);
+	// 		}
+	// 	};
+
+	// 	document.addEventListener("scroll", why_appfolio_animation_load);
+	// 	window.addEventListener("resize", why_appfolio_animation_load);
+	// 	window.addEventListener("orientationchange", why_appfolio_animation_load);
+	// });
 
 	// We have made an iterated version of opening ".afmodal" found in onready.js
 	// This queries the value of the data object of the element
