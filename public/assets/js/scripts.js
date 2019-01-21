@@ -152,29 +152,6 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 // $ is the name that variable will take in the scope of the function
 (function ($) {
 
-	function play_why_appfolio_animation(e) {
-
-		// if ($(e).find('.svg-small-focused-teams').length > 0) {
-		// 	lottie.loadAnimation(small_focused_teams_params).play();
-		// }
-
-		// if ($(e).find('.svg-built-to-last').length > 0) {
-		// 	lottie.loadAnimation(built_to_last_params).play();
-		// }
-
-		// if ($(e).find('.svg-customer-first-engieneering').length > 0) {
-		// 	lottie.loadAnimation(customer_first_engineering_params).play();
-		// }
-
-		// if ($(e).find('.svg-hard-problems-high-impact').length > 0) {
-		// 	lottie.loadAnimation(hard_problems_high_impact_params).play();
-		// }
-
-		// if ($(e).find('.svg-program-in-paradise').length > 0) {
-		// 	lottie.loadAnimation(program_in_paradise_params).play();
-		// }
-	}
-
 	$("#owl-cards").owlCarousel({
 		center: false,
 		navigation: true,
@@ -269,47 +246,6 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 			}
 		});
 	});
-
-	// document.addEventListener("DOMContentLoaded", function () {
-
-	// 	let owl_cards = [].slice.call(document.querySelectorAll("#owl-cards"));
-	// 	let active = false;
-
-	// 	const why_appfolio_animation_load = function () {
-	// 		if (active === false) {
-	// 			active = true;
-
-	// 			setTimeout(function () {
-	// 				owl_cards.forEach(function (owl_card) {
-	// 					if ((owl_card.getBoundingClientRect().top <= window.innerHeight && owl_card.getBoundingClientRect().bottom >= 0) && getComputedStyle(owl_card).display !== "none") {
-
-	// 						lottie.loadAnimation(small_focused_teams_params).play();
-	// 						lottie.loadAnimation(built_to_last_params).play();
-	// 						lottie.loadAnimation(customer_first_engineering_params).play();
-	// 						lottie.loadAnimation(hard_problems_high_impact_params).play();
-	// 						lottie.loadAnimation(program_in_paradise_params).play();
-
-	// 						owl_cards = owl_cards.filter(function (card) {
-	// 							return card !== owl_card;
-	// 						});
-
-	// 						if (owl_cards.length === 0) {
-	// 							document.removeEventListener("scroll", why_appfolio_animation_load);
-	// 							window.removeEventListener("resize", why_appfolio_animation_load);
-	// 							window.removeEventListener("orientationchange", why_appfolio_animation_load);
-	// 						}
-	// 					}
-	// 				});
-
-	// 				active = false;
-	// 			}, 200);
-	// 		}
-	// 	};
-
-	// 	document.addEventListener("scroll", why_appfolio_animation_load);
-	// 	window.addEventListener("resize", why_appfolio_animation_load);
-	// 	window.addEventListener("orientationchange", why_appfolio_animation_load);
-	// });
 
 	// We have made an iterated version of opening ".afmodal" found in onready.js
 	// This queries the value of the data object of the element
