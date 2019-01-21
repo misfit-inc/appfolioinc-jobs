@@ -1,32 +1,5 @@
 $(document).ready(function() {
 
-    $("#owl-timeline").owlCarousel({
-        loop: true,
-        slideSpeed : 300,
-        autoPlay: false,
-        pagination: false,
-        singleItem: true,
-        navigation: true,
-        navText: [""]
-    });
-
-    $("#owl-employees").owlCarousel({
-        navigation : true,
-        slideSpeed : 300,
-        autoPlay: false,
-        pagination: false,
-        itemsCustom : [
-            [0, 1],
-            [500, 2],
-            [1000, 3],
-            [1500, 4],
-            [2000, 5]
-        ]
-    });
-
-    $(".owl-prev").html("<span></span>");
-    $(".owl-next").html("<span></span>");
-
     // This section removes the text overlay of the videos on play click and loads in the embed code from Wistia and autoplays
     function loadWisitaEmbed(id){ // function to dynamically generate the proper embed code based on Wistia ID
         var embedCode = "";
@@ -165,4 +138,3 @@ $(document).keyup(function(e){
     if(e.keyCode === 27)
         $(".afmodal").fadeOut();
 });
-

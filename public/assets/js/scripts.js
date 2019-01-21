@@ -175,39 +175,23 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		// }
 	}
 
-	$("#owl-cards").owlCarousel({
-		center: true,
-		navigation: true,
-		margin: 10,
-		slideSpeed: 300,
-		items: 5,
-		loop: true,
-		nav: true,
-		navElement: 'div',
-		navText: ['<img src="./assets/images/icons/ico-slider-prev.svg">', '<img src="./assets/images/icons/ico-slider-next.svg">'],
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			768: {
-				items: 2
-			},
-			1024: {
-				items: 3
-			},
-			1280: {
-				items: 4
-			}
-		},
-		onInitialized: function(){
-			lottie.loadAnimation(small_focused_teams_params).play();
-			lottie.loadAnimation(built_to_last_params).play();
-			lottie.loadAnimation(customer_first_engineering_params).play();
-			lottie.loadAnimation(hard_problems_high_impact_params).play();
-			lottie.loadAnimation(program_in_paradise_params).play();
-		}
-	});
+	// The new slider to replace Owl Slider due to compatibility with animated SVG
+	var mySwiper = new Swiper('.swiper-container', {
+		loop: false,
+		spaceBetween: 10,
+		slidesPerView: 5,
+		centeredSlides: true,
+		centerInsufficientSlides: true
+		// on: {
+		// 	init: function () {
+		// 		lottie.loadAnimation(small_focused_teams_params).play();
+		// 		lottie.loadAnimation(built_to_last_params).play();
+		// 		lottie.loadAnimation(customer_first_engineering_params).play();
+		// 		lottie.loadAnimation(hard_problems_high_impact_params).play();
+		// 		lottie.loadAnimation(program_in_paradise_params).play();
+		// 	},
+		// },
+	})
 
 	// This controls the photo masonry at the bottom of the page
 	// Set the timeout to provide Isotope time to adjust to page load time
@@ -270,46 +254,52 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		});
 	});
 
-	// document.addEventListener("DOMContentLoaded", function () {
+	document.addEventListener("DOMContentLoaded", function () {
 
-	// 	let owl_cards = [].slice.call(document.querySelectorAll("#owl-cards"));
-	// 	let active = false;
+		lottie.loadAnimation(small_focused_teams_params).play();
+		lottie.loadAnimation(built_to_last_params).play();
+		lottie.loadAnimation(customer_first_engineering_params).play();
+		lottie.loadAnimation(hard_problems_high_impact_params).play();
+		lottie.loadAnimation(program_in_paradise_params).play();
 
-	// 	const why_appfolio_animation_load = function () {
-	// 		if (active === false) {
-	// 			active = true;
+		// let owl_cards = [].slice.call(document.querySelectorAll("#owl-cards"));
+		// let active = false;
 
-	// 			setTimeout(function () {
-	// 				owl_cards.forEach(function (owl_card) {
-	// 					if ((owl_card.getBoundingClientRect().top <= window.innerHeight && owl_card.getBoundingClientRect().bottom >= 0) && getComputedStyle(owl_card).display !== "none") {
+		// const why_appfolio_animation_load = function () {
+		// 	if (active === false) {
+		// 		active = true;
 
-	// 						lottie.loadAnimation(small_focused_teams_params).play();
-	// 						lottie.loadAnimation(built_to_last_params).play();
-	// 						lottie.loadAnimation(customer_first_engineering_params).play();
-	// 						lottie.loadAnimation(hard_problems_high_impact_params).play();
-	// 						lottie.loadAnimation(program_in_paradise_params).play();
+		// 		setTimeout(function () {
+		// 			owl_cards.forEach(function (owl_card) {
+		// 				if ((owl_card.getBoundingClientRect().top <= window.innerHeight && owl_card.getBoundingClientRect().bottom >= 0) && getComputedStyle(owl_card).display !== "none") {
 
-	// 						owl_cards = owl_cards.filter(function (card) {
-	// 							return card !== owl_card;
-	// 						});
+		// 					lottie.loadAnimation(small_focused_teams_params).play();
+		// 					lottie.loadAnimation(built_to_last_params).play();
+		// 					lottie.loadAnimation(customer_first_engineering_params).play();
+		// 					lottie.loadAnimation(hard_problems_high_impact_params).play();
+		// 					lottie.loadAnimation(program_in_paradise_params).play();
 
-	// 						if (owl_cards.length === 0) {
-	// 							document.removeEventListener("scroll", why_appfolio_animation_load);
-	// 							window.removeEventListener("resize", why_appfolio_animation_load);
-	// 							window.removeEventListener("orientationchange", why_appfolio_animation_load);
-	// 						}
-	// 					}
-	// 				});
+		// 					owl_cards = owl_cards.filter(function (card) {
+		// 						return card !== owl_card;
+		// 					});
 
-	// 				active = false;
-	// 			}, 200);
-	// 		}
-	// 	};
+		// 					if (owl_cards.length === 0) {
+		// 						document.removeEventListener("scroll", why_appfolio_animation_load);
+		// 						window.removeEventListener("resize", why_appfolio_animation_load);
+		// 						window.removeEventListener("orientationchange", why_appfolio_animation_load);
+		// 					}
+		// 				}
+		// 			});
 
-	// 	document.addEventListener("scroll", why_appfolio_animation_load);
-	// 	window.addEventListener("resize", why_appfolio_animation_load);
-	// 	window.addEventListener("orientationchange", why_appfolio_animation_load);
-	// });
+		// 			// active = false;
+		// 		}, 200);
+		// 	}
+		// };
+
+		// document.addEventListener("scroll", why_appfolio_animation_load);
+		// window.addEventListener("resize", why_appfolio_animation_load);
+		// window.addEventListener("orientationchange", why_appfolio_animation_load);
+	});
 
 	// We have made an iterated version of opening ".afmodal" found in onready.js
 	// This queries the value of the data object of the element

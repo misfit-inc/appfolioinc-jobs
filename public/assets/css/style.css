@@ -6983,34 +6983,35 @@ section p {
     font-size: 1.0625rem;
     font-weight: 300;
     line-height: 1.7; }
-  .cards-slider .owl-stage {
+  .cards-slider .swiper-wrapper {
     display: flex; }
-    .cards-slider .owl-stage .owl-stage-outer {
+    .cards-slider .swiper-wrapper .owl-stage-outer {
       width: 100%; }
-    .cards-slider .owl-stage .owl-item {
-      padding: 4rem 1.5rem 12rem; }
-      .cards-slider .owl-stage .owl-item:last-child {
+    .cards-slider .swiper-wrapper .swiper-slide {
+      padding: 4rem 1.5rem 12rem;
+      height: 100%; }
+      .cards-slider .swiper-wrapper .swiper-slide:last-child {
         margin-right: 0 !important; }
-      .cards-slider .owl-stage .owl-item:nth-child(1), .cards-slider .owl-stage .owl-item:nth-child(6n), .cards-slider .owl-stage .owl-item:nth-child(11) {
+      .cards-slider .swiper-wrapper .swiper-slide:nth-child(1), .cards-slider .swiper-wrapper .swiper-slide:nth-child(6n), .cards-slider .swiper-wrapper .swiper-slide:nth-child(11) {
         background-color: #009de6; }
-      .cards-slider .owl-stage .owl-item:nth-child(2), .cards-slider .owl-stage .owl-item:nth-child(7n), .cards-slider .owl-stage .owl-item:nth-child(13) {
+      .cards-slider .swiper-wrapper .swiper-slide:nth-child(2), .cards-slider .swiper-wrapper .swiper-slide:nth-child(7n), .cards-slider .swiper-wrapper .swiper-slide:nth-child(13) {
         background-color: #00c1ae; }
-      .cards-slider .owl-stage .owl-item:nth-child(3), .cards-slider .owl-stage .owl-item:nth-child(8n) {
+      .cards-slider .swiper-wrapper .swiper-slide:nth-child(3), .cards-slider .swiper-wrapper .swiper-slide:nth-child(8n) {
         background-color: #e0b100; }
-      .cards-slider .owl-stage .owl-item:nth-child(4), .cards-slider .owl-stage .owl-item:nth-child(9n) {
+      .cards-slider .swiper-wrapper .swiper-slide:nth-child(4), .cards-slider .swiper-wrapper .swiper-slide:nth-child(9n) {
         background-color: #ff0032; }
-      .cards-slider .owl-stage .owl-item:nth-child(5), .cards-slider .owl-stage .owl-item:nth-child(5n) {
+      .cards-slider .swiper-wrapper .swiper-slide:nth-child(5), .cards-slider .swiper-wrapper .swiper-slide:nth-child(5n) {
         background-color: #3c4650; }
-      .cards-slider .owl-stage .owl-item img {
+      .cards-slider .swiper-wrapper .swiper-slide img {
         bottom: 2rem;
         left: 0;
         margin: 0 auto;
         position: absolute;
         right: 0;
         width: 14.5rem; }
-  .cards-slider .owl-carousel {
+  .cards-slider .swiper-container {
     display: flex; }
-    .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
+    .cards-slider .swiper-container:before, .cards-slider .swiper-container:after {
       content: '';
       display: none;
       height: 100%;
@@ -7019,9 +7020,9 @@ section p {
       width: 10rem;
       z-index: 1; }
       @media only screen and (min-width: 64.0625em) {
-        .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
+        .cards-slider .swiper-container:before, .cards-slider .swiper-container:after {
           display: block; } }
-    .cards-slider .owl-carousel:before {
+    .cards-slider .swiper-container:before {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&0.5+0,0+100 */
       background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
       /* FF3.6-15 */
@@ -7032,7 +7033,7 @@ section p {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#007db9e8', GradientType=1);
       /* IE6-9 */
       left: 0; }
-    .cards-slider .owl-carousel:after {
+    .cards-slider .swiper-container:after {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&0.5+0,0+100 */
       background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
       /* FF3.6-15 */
@@ -7043,14 +7044,14 @@ section p {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#80000000', GradientType=1);
       /* IE6-9 */
       right: 0; }
-    .cards-slider .owl-carousel .owl-nav {
+    .cards-slider .swiper-container .owl-nav {
       align-self: center;
       display: flex;
       position: absolute;
       width: 100%;
       z-index: 2; }
-      .cards-slider .owl-carousel .owl-nav > div,
-      .cards-slider .owl-carousel .owl-nav button {
+      .cards-slider .swiper-container .owl-nav > div,
+      .cards-slider .swiper-container .owl-nav button {
         align-self: center;
         position: absolute;
         -webkit-transition: opacity 0.3s ease;
@@ -7058,16 +7059,16 @@ section p {
         -ms-transition: opacity 0.3s ease;
         -o-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease; }
-        .cards-slider .owl-carousel .owl-nav > div:hover,
-        .cards-slider .owl-carousel .owl-nav button:hover {
+        .cards-slider .swiper-container .owl-nav > div:hover,
+        .cards-slider .swiper-container .owl-nav button:hover {
           opacity: .7;
           background-color: transparent; }
-        .cards-slider .owl-carousel .owl-nav > div.disabled,
-        .cards-slider .owl-carousel .owl-nav > div *.disabled:hover,
-        .cards-slider .owl-carousel .owl-nav button.disabled,
-        .cards-slider .owl-carousel .owl-nav button *.disabled:hover {
+        .cards-slider .swiper-container .owl-nav > div.disabled,
+        .cards-slider .swiper-container .owl-nav > div *.disabled:hover,
+        .cards-slider .swiper-container .owl-nav button.disabled,
+        .cards-slider .swiper-container .owl-nav button *.disabled:hover {
           opacity: .5; }
-      .cards-slider .owl-carousel .owl-nav span {
+      .cards-slider .swiper-container .owl-nav span {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -7077,44 +7078,44 @@ section p {
         font-size: 4rem;
         width: 2rem; }
         @media only screen and (max-width: 40em) {
-          .cards-slider .owl-carousel .owl-nav span {
+          .cards-slider .swiper-container .owl-nav span {
             height: 2rem;
             width: 1rem; } }
-      .cards-slider .owl-carousel .owl-nav .owl-prev {
+      .cards-slider .swiper-container .owl-nav .owl-prev {
         background-color: transparent;
         left: 3rem; }
         @media only screen and (max-width: 40em) {
-          .cards-slider .owl-carousel .owl-nav .owl-prev {
+          .cards-slider .swiper-container .owl-nav .owl-prev {
             left: 1rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-prev img {
+            .cards-slider .swiper-container .owl-nav .owl-prev img {
               max-width: 50%; } }
         @media only screen and (min-width: 64.0625em) {
-          .cards-slider .owl-carousel .owl-nav .owl-prev {
+          .cards-slider .swiper-container .owl-nav .owl-prev {
             left: 2rem; } }
         @media only screen and (min-width: 90.0625em) {
-          .cards-slider .owl-carousel .owl-nav .owl-prev {
+          .cards-slider .swiper-container .owl-nav .owl-prev {
             left: 3rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-prev img {
+            .cards-slider .swiper-container .owl-nav .owl-prev img {
               max-width: 100%; } }
-        .cards-slider .owl-carousel .owl-nav .owl-prev span {
+        .cards-slider .swiper-container .owl-nav .owl-prev span {
           background-image: url("../../../assets/images/icons/ico-slider-prev.svg"); }
-      .cards-slider .owl-carousel .owl-nav .owl-next {
+      .cards-slider .swiper-container .owl-nav .owl-next {
         background-color: transparent;
         right: 3rem; }
         @media only screen and (max-width: 40em) {
-          .cards-slider .owl-carousel .owl-nav .owl-next {
+          .cards-slider .swiper-container .owl-nav .owl-next {
             right: 1rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-next img {
+            .cards-slider .swiper-container .owl-nav .owl-next img {
               max-width: 50%; } }
         @media only screen and (min-width: 64.0625em) {
-          .cards-slider .owl-carousel .owl-nav .owl-next {
+          .cards-slider .swiper-container .owl-nav .owl-next {
             right: 2rem; } }
         @media only screen and (min-width: 90.0625em) {
-          .cards-slider .owl-carousel .owl-nav .owl-next {
+          .cards-slider .swiper-container .owl-nav .owl-next {
             right: 3rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-next img {
+            .cards-slider .swiper-container .owl-nav .owl-next img {
               max-width: 100%; } }
-        .cards-slider .owl-carousel .owl-nav .owl-next span {
+        .cards-slider .swiper-container .owl-nav .owl-next span {
           background-image: url("../../../assets/images/icons/ico-slider-next.svg"); }
 
 .photo-content {

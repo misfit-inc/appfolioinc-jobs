@@ -33,15 +33,16 @@
 		line-height: 1.7;
 	}
 
-	.owl-stage {
+	.swiper-wrapper {
 		display: flex;
 
 		.owl-stage-outer {
 			width: 100%;
 		}
 
-		.owl-item {
+		.swiper-slide {
 			padding: 4rem 1.5rem 12rem;
+			height: 100%;
 
 			&:last-child {
 				margin-right: 0 !important;
@@ -85,7 +86,7 @@
 		}
 	}
 
-	.owl-carousel {
+	.swiper-container {
 		display: flex;
 
 		&:before,
