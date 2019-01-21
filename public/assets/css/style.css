@@ -7001,13 +7001,15 @@ section p {
         background-color: #ff0032; }
       .cards-slider .owl-stage .owl-item:nth-child(5), .cards-slider .owl-stage .owl-item:nth-child(5n) {
         background-color: #3c4650; }
-      .cards-slider .owl-stage .owl-item img {
+      .cards-slider .owl-stage .owl-item img,
+      .cards-slider .owl-stage .owl-item svg {
         bottom: 2rem;
+        height: auto !important;
         left: 0;
         margin: 0 auto;
         position: absolute;
         right: 0;
-        width: 14.5rem; }
+        width: 15rem !important; }
   .cards-slider .owl-carousel {
     display: flex; }
     .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
@@ -7086,7 +7088,8 @@ section p {
         @media only screen and (max-width: 40em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
             left: 1rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-prev img {
+            .cards-slider .owl-carousel .owl-nav .owl-prev img,
+            .cards-slider .owl-carousel .owl-nav .owl-prev svg {
               max-width: 50%; } }
         @media only screen and (min-width: 64.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
@@ -7094,7 +7097,8 @@ section p {
         @media only screen and (min-width: 90.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-prev {
             left: 3rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-prev img {
+            .cards-slider .owl-carousel .owl-nav .owl-prev img,
+            .cards-slider .owl-carousel .owl-nav .owl-prev svg {
               max-width: 100%; } }
         .cards-slider .owl-carousel .owl-nav .owl-prev span {
           background-image: url("../../../assets/images/icons/ico-slider-prev.svg"); }
@@ -7104,7 +7108,8 @@ section p {
         @media only screen and (max-width: 40em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
             right: 1rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-next img {
+            .cards-slider .owl-carousel .owl-nav .owl-next img,
+            .cards-slider .owl-carousel .owl-nav .owl-next svg {
               max-width: 50%; } }
         @media only screen and (min-width: 64.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
@@ -7112,7 +7117,8 @@ section p {
         @media only screen and (min-width: 90.0625em) {
           .cards-slider .owl-carousel .owl-nav .owl-next {
             right: 3rem; }
-            .cards-slider .owl-carousel .owl-nav .owl-next img {
+            .cards-slider .owl-carousel .owl-nav .owl-next img,
+            .cards-slider .owl-carousel .owl-nav .owl-next svg {
               max-width: 100%; } }
         .cards-slider .owl-carousel .owl-nav .owl-next span {
           background-image: url("../../../assets/images/icons/ico-slider-next.svg"); }

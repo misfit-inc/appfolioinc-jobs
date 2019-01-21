@@ -41,6 +41,7 @@
 		}
 
 		.owl-item {
+			// padding: 4rem 1.5rem 4rem;
 			padding: 4rem 1.5rem 12rem;
 
 			&:last-child {
@@ -74,13 +75,17 @@
 				background-color: $color-gray;
 			}
 
-			img {
+			img,
+			svg {
 				bottom: 2rem;
+				// need this to override the converted svg's inline styles
+				height: auto !important;
 				left: 0;
 				margin: 0 auto;
 				position: absolute;
 				right: 0;
-				width: 14.5rem;
+				// need this to override the converted svg's inline styles
+				width: 15rem !important;
 			}
 		}
 	}
@@ -177,7 +182,8 @@
 				@media only screen and (max-width: 40em) {
 					left: 1rem;
 
-					img {
+					img,
+					svg {
 						max-width: 50%;
 					}
 				}
@@ -189,7 +195,8 @@
 				@media only screen and (min-width: 90.0625em) {
 					left: 3rem;
 
-					img {
+					img,
+					svg {
 						max-width: 100%;
 					}
 				}
@@ -206,7 +213,8 @@
 				@media only screen and (max-width: 40em) {
 					right: 1rem;
 
-					img {
+					img,
+					svg {
 						max-width: 50%;
 					}
 				}
@@ -218,7 +226,8 @@
 				@media only screen and (min-width: 90.0625em) {
 					right: 3rem;
 
-					img {
+					img,
+					svg {
 						max-width: 100%;
 					}
 				}

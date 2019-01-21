@@ -176,12 +176,12 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 	}
 
 	$("#owl-cards").owlCarousel({
-		center: true,
+		center: false,
 		navigation: true,
 		margin: 10,
 		slideSpeed: 300,
-		items: 5,
-		loop: true,
+		items: 4,
+		loop: false,
 		nav: true,
 		navElement: 'div',
 		navText: ['<img src="./assets/images/icons/ico-slider-prev.svg">', '<img src="./assets/images/icons/ico-slider-next.svg">'],
