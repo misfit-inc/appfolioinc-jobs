@@ -56,8 +56,16 @@
 				width: 100%;
 			}
 
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+			}
+
 			@media only screen and (min-width: 64.0625em) {
 				width: 49%;
+			}
+
+			@media only screen and (max-width: 1024px) {
+				width: 100%;
 			}
 		}
 

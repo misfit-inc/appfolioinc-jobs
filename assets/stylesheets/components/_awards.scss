@@ -66,6 +66,10 @@
 
 	.southcoast {
 		margin: 2rem auto;
+
+		@media all and (-ms-high-contrast:none) {
+			padding-top: 6rem;
+		}
 	}
 
 	.stevie {
