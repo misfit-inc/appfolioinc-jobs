@@ -6763,6 +6763,7 @@ section p {
       .hero-bar-text a:hover,
       .hero-bar-text a:visited:hover {
         border-bottom-color: transparent;
+        color: #fff;
         font-size: 0.9375rem;
         text-decoration: none; }
       @media only screen and (max-width: 40em) {
