@@ -157,7 +157,7 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		navigation: true,
 		margin: 10,
 		slideSpeed: 300,
-		items: 4,
+		items: 5,
 		loop: false,
 		nav: true,
 		navElement: 'div',
@@ -168,13 +168,13 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 				items: 1
 			},
 			768: {
-				items: 2
-			},
-			1024: {
 				items: 3
 			},
-			1280: {
+			1024: {
 				items: 4
+			},
+			1280: {
+				items: 5
 			}
 		},
 		onInitialized: function(){

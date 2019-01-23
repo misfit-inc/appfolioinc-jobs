@@ -78,6 +78,10 @@
 			.why-appfolio-icon {
 				position: absolute;
 				bottom: 2rem;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				text-align: center;
 			}
 
 			img,
@@ -89,6 +93,18 @@
 				right: 0;
 				// need this to override the converted svg's inline styles
 				width: 15rem !important;
+
+				@media only screen and (max-width: 40em) {
+					width: 14rem !important;
+				}
+
+				@media only screen and (min-width: 64.0625em) {
+					width: 14rem !important;
+				}
+				
+				@media only screen and (min-width: 120.0625em) {
+					width: 15rem !important;
+				}
 			}
 		}
 	}
@@ -143,6 +159,10 @@
 			position: absolute;
 			width: 100%;
 			z-index: 2;
+
+			@media only screen and (min-width: 1281px) {
+				display: none;
+			}
 
 			> div,
 			button {

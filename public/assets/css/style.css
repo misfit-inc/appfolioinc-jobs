@@ -7010,7 +7010,11 @@ section p {
         background-color: #3c4650; }
       .cards-slider .owl-stage .owl-item .why-appfolio-icon {
         position: absolute;
-        bottom: 2rem; }
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center; }
       .cards-slider .owl-stage .owl-item img,
       .cards-slider .owl-stage .owl-item svg {
         height: auto !important;
@@ -7018,6 +7022,14 @@ section p {
         margin: 0 auto;
         right: 0;
         width: 15rem !important; }
+        @media only screen and (max-width: 40em) {
+          .cards-slider .owl-stage .owl-item img,
+          .cards-slider .owl-stage .owl-item svg {
+            width: 14rem !important; } }
+        @media only screen and (min-width: 120.0625em) {
+          .cards-slider .owl-stage .owl-item img,
+          .cards-slider .owl-stage .owl-item svg {
+            width: 15rem !important; } }
   .cards-slider .owl-carousel {
     display: flex; }
     .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
@@ -7059,6 +7071,9 @@ section p {
       position: absolute;
       width: 100%;
       z-index: 2; }
+      @media only screen and (min-width: 1281px) {
+        .cards-slider .owl-carousel .owl-nav {
+          display: none; } }
       .cards-slider .owl-carousel .owl-nav > div,
       .cards-slider .owl-carousel .owl-nav button {
         align-self: center;
