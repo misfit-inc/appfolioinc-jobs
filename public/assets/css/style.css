@@ -7026,6 +7026,10 @@ section p {
           .cards-slider .owl-stage .owl-item img,
           .cards-slider .owl-stage .owl-item svg {
             width: 14rem !important; } }
+        @media only screen and (min-width: 64.0625em) {
+          .cards-slider .owl-stage .owl-item img,
+          .cards-slider .owl-stage .owl-item svg {
+            width: 14rem !important; } }
         @media only screen and (min-width: 120.0625em) {
           .cards-slider .owl-stage .owl-item img,
           .cards-slider .owl-stage .owl-item svg {
@@ -7043,6 +7047,9 @@ section p {
       @media only screen and (min-width: 64.0625em) {
         .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
           display: block; } }
+      @media only screen and (min-width: 1281px) {
+        .cards-slider .owl-carousel:before, .cards-slider .owl-carousel:after {
+          display: none; } }
     .cards-slider .owl-carousel:before {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&0.5+0,0+100 */
       background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
