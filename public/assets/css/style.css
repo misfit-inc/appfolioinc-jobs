@@ -6967,6 +6967,12 @@ section p {
   .tiles.photos .tile.background-top {
     background-position: top; }
 
+.tiles.photos .owl-carousel .tile {
+  background-image: none !important; }
+
+.tiles.photos .owl-carousel img {
+  visibility: visible; }
+
 .cards-slider {
   margin-bottom: 10rem;
   overflow: hidden; }

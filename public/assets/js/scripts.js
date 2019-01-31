@@ -186,19 +186,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	// This controls the photo masonry at the bottom of the page
-	// Set the timeout to provide Isotope time to adjust to page load time
-	// https://isotope.metafizzy.co/docs
-	setTimeout(function() {
-		$('.tiles.photos .tile-container').isotope({
-			layoutMode: 'masonry',
-			masonry: {
-				gutter: 10,
-				columnHeight: 20,
-			},
-		});
-	}, 500);
-
 	// Inview controls the fadein of sections as you scroll to the elements into view
 	// http://imakewebthings.com/waypoints/shortcuts/inview/
 	$('.inview').each(function () {
@@ -273,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	let active_slider = false;
-	const mobileCardsSliderLoad = function () {
+	const mobileSliderLoad = function () {
 		if (active_slider === false) {
 			active_slider = true;
 
@@ -297,8 +284,38 @@ document.addEventListener("DOMContentLoaded", function () {
 							}
 						}
 					});
+
+					$("#tile-container").owlCarousel({
+						autoHeight: true,
+						dots: true,
+						center: false,
+						items: 1,
+						loop: false,
+						margin: 20,
+						navElement: 'div',
+						nav: false,
+						navigation: true,
+						slideSpeed: 300,
+						responsive: {
+							0: {
+								items: 1
+							}
+						}
+					});
 				} else {
 					$("#cards-container").owlCarousel('destroy');
+					// This controls the photo masonry at the bottom of the page
+					// Set the timeout to provide Isotope time to adjust to page load time
+					// https://isotope.metafizzy.co/docs
+					setTimeout(function () {
+						$('.tiles.photos .tile-container').isotope({
+							layoutMode: 'masonry',
+							masonry: {
+								gutter: 10,
+								columnHeight: 20,
+							},
+						});
+					}, 500);
 				}
 
 				active_slider = false;
@@ -306,8 +323,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-	document.addEventListener("scroll", mobileCardsSliderLoad);
-	window.addEventListener("resize", mobileCardsSliderLoad);
-	window.addEventListener("orientationchange", mobileCardsSliderLoad);
-	
+	document.addEventListener("scroll", mobileSliderLoad);
+	window.addEventListener("resize", mobileSliderLoad);
+	window.addEventListener("orientationchange", mobileSliderLoad);
+
 });

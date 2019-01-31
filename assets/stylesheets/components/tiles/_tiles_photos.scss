@@ -73,4 +73,14 @@
 			background-position: top;
 		}
 	}
+
+	.owl-carousel {
+		.tile {
+			background-image: none !important;
+		}
+
+		img {
+			visibility: visible;
+		}
+	}
 }
