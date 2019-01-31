@@ -6913,6 +6913,12 @@ section p {
   -o-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease; }
 
+.tiles.photos.slider-enabled {
+  opacity: 1;
+  top: auto; }
+  .tiles.photos.slider-enabled .tile-container {
+    opacity: 1; }
+
 .tiles.photos .section-title {
   margin-bottom: 3rem; }
 
@@ -6930,7 +6936,7 @@ section p {
   width: 25%; }
   @media only screen and (max-width: 40em) {
     .tiles.photos .tile {
-      height: 20rem;
+      height: auto;
       width: 100%; } }
   @media only screen and (min-width: 40.0625em) {
     .tiles.photos .tile {
@@ -6945,7 +6951,7 @@ section p {
     height: 14.05rem; }
     @media only screen and (max-width: 40em) {
       .tiles.photos .tile.short {
-        height: 30rem; } }
+        height: auto; } }
     @media only screen and (min-width: 64.0625em) {
       .tiles.photos .tile.short {
         height: 14.05rem; } }
@@ -6953,7 +6959,7 @@ section p {
     width: 49%; }
     @media only screen and (max-width: 40em) {
       .tiles.photos .tile.wide {
-        height: 20rem;
+        height: auto;
         width: 100%; } }
     @media only screen and (max-width: 768px) {
       .tiles.photos .tile.wide {
@@ -6966,6 +6972,28 @@ section p {
         width: 100%; } }
   .tiles.photos .tile.background-top {
     background-position: top; }
+
+.tiles.photos .owl-carousel .owl-item img {
+  width: auto; }
+
+.tiles.photos .owl-carousel .owl-dots {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem; }
+  .tiles.photos .owl-carousel .owl-dots .owl-dot {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    height: .6rem;
+    margin: 0 .2rem;
+    width: .6rem;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease; }
+    .tiles.photos .owl-carousel .owl-dots .owl-dot.active, .tiles.photos .owl-carousel .owl-dots .owl-dot:hover {
+      background-color: rgba(0, 0, 0, 0.4); }
 
 .tiles.photos .owl-carousel .tile {
   background-image: none !important; }

@@ -1,4 +1,14 @@
 .tiles.photos {
+
+	&.slider-enabled {
+		opacity: 1;
+		top: auto;
+
+		.tile-container {
+			opacity: 1;
+		}
+	}
+
 	.section-title {
 		margin-bottom: 3rem;
 	}
@@ -20,7 +30,7 @@
 		width: 25%;
 
 		@media only screen and (max-width: 40em) {
-			height: 20rem;
+			height: auto;
 			width: 100%;
 		}
 
@@ -40,7 +50,7 @@
 			height: 14.05rem;
 
 			@media only screen and (max-width: 40em) {
-				height: 30rem;
+				height: auto;
 			}
 
 			@media only screen and (min-width: 64.0625em) {
@@ -52,7 +62,7 @@
 			width: 49%;
 
 			@media only screen and (max-width: 40em) {
-				height: 20rem;
+				height: auto;
 				width: 100%;
 			}
 
@@ -75,6 +85,34 @@
 	}
 
 	.owl-carousel {
+		.owl-item {
+			img {
+				width: auto;
+			}
+		}
+
+		.owl-dots {
+			text-align: center;
+			width: 100%;
+			margin-top: 2rem;
+
+			.owl-dot {
+				background-color: rgba(0, 0, 0, .2);
+				border-radius: 50%;
+				display: inline-block;
+				height: .6rem;
+				margin: 0 .2rem;
+				width: .6rem;
+
+				@include transition(background-color .4s ease);
+
+				&.active,
+				&:hover {
+					background-color: rgba(0, 0, 0, .4);
+				}
+			}
+		}
+
 		.tile {
 			background-image: none !important;
 		}

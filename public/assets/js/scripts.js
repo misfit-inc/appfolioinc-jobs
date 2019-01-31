@@ -301,9 +301,17 @@ document.addEventListener("DOMContentLoaded", function () {
 								items: 1
 							}
 						}
-					});
+					})
+						.parents('.tiles')
+						.addClass('slider-enabled');
 				} else {
-					$("#cards-container").owlCarousel('destroy');
+					$("#cards-container")
+						.owlCarousel('destroy');
+					$("#tile-container")
+						.owlCarousel('destroy')
+						.parents('.tiles')
+						.removeClass('slider-enabled');
+					
 					// This controls the photo masonry at the bottom of the page
 					// Set the timeout to provide Isotope time to adjust to page load time
 					// https://isotope.metafizzy.co/docs
