@@ -6685,6 +6685,9 @@ body h1, body h2, body h3, body h4, body h5 {
 body section p {
   color: #212121; }
 
+body footer .address {
+  white-space: normal; }
+
 .x-content.wide {
   max-width: 72.5rem; }
 

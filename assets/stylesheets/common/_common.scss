@@ -22,6 +22,12 @@ body {
 			color: $color-text;
 		}
 	}
+
+	footer {
+		.address {
+			white-space: normal;
+		}
+	}
 }
 
 .x-content {
