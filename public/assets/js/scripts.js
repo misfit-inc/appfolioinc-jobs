@@ -150,7 +150,7 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 
 // jQuery, if it exists will be passed to the function. 
 // $ is the name that variable will take in the scope of the function
-(function ($) {
+document.addEventListener("DOMContentLoaded", function () {
 
 	$("#owl-cards").owlCarousel({
 		center: false,
@@ -272,4 +272,42 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 		});
 	}
 
-})(jQuery)
+	let active_slider = false;
+	const mobileCardsSliderLoad = function () {
+		if (active_slider === false) {
+			active_slider = true;
+
+			setTimeout(function () {
+
+				if (window.innerWidth <= 639) {
+					$("#cards-container").owlCarousel({
+						autoHeight: true,
+						dots: true,
+						center: false,
+						items: 1,
+						loop: false,
+						margin: 20,
+						navElement: 'div',
+						nav: false,
+						navigation: true,
+						slideSpeed: 300,
+						responsive: {
+							0: {
+								items: 1
+							}
+						}
+					});
+				} else {
+					$("#cards-container").owlCarousel('destroy');
+				}
+
+				active_slider = false;
+			}, 200);
+		}
+	}
+
+	document.addEventListener("scroll", mobileCardsSliderLoad);
+	window.addEventListener("resize", mobileCardsSliderLoad);
+	window.addEventListener("orientationchange", mobileCardsSliderLoad);
+	
+});

@@ -46,7 +46,7 @@
 		width: 23.2%;
 
 		@media only screen and (max-width: 40em) {
-			width: 100%;
+			width: 99%;
 		}
 
 		@media only screen and (min-width: 40.0625em) {
@@ -122,6 +122,42 @@
 				button {
 					background-color: transparent;
 					color: $color-lighter-blue;
+				}
+			}
+		}
+	}
+
+	.owl-carousel {
+		.owl-item {
+			img {
+				width: auto;
+			}
+
+			.card {
+				margin-bottom: 0;
+				opacity: 1;
+				top: auto;
+			}
+		}
+
+		.owl-dots {
+			text-align: center;
+			width: 100%;
+			margin-top: 2rem;
+
+			.owl-dot {
+				background-color: rgba(0,0,0,.2);
+				border-radius: 50%;
+				display: inline-block;
+				height: 1rem;
+				margin: 0 .2rem;
+				width: 1rem;
+
+				@include transition(background-color .4s ease);
+
+				&.active,
+				&:hover {
+					background-color: rgba(0,0,0,.4);
 				}
 			}
 		}
