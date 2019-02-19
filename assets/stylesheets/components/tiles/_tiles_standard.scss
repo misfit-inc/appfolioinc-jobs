@@ -132,26 +132,28 @@
 			}
 
 			> .column .tile {
-				 &:before {
-					background-color: rgba(0, 0, 0, .3);
-					content: '';
-					height: 100%;
-					left: 0;
-					opacity: 0;
-					position: absolute;
-					top: 0;
-					width: 100%;
+				&.overlay-hover {
+					&:before {
+						background-color: rgba(0, 0, 0, .3);
+						content: '';
+						height: 100%;
+						left: 0;
+						opacity: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
 
-					@include transition(opacity .4s ease);
-				}
-			
-				&:hover:before {
-					opacity: 1;
-					z-index: 1;
-				}
+						@include transition(opacity .4s ease);
+					}
 
-				&:hover .tile-icon {
-					opacity: 1;
+					&:hover:before {
+						opacity: 1;
+						z-index: 1;
+					}
+
+					&:hover .tile-icon {
+						opacity: 1;
+					}
 				}
 			}
 
