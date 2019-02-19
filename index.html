@@ -106,9 +106,23 @@
 									</div>
 								</div>
 								<div class="column left-side large-6 medium-6 small-12 show-for-medium-up">
-									<div class="tile flex" style="background-image: url('./assets/images/photo-4.jpg');">
+									<div class="tile flex" style="background-image: url('./assets/images/behind-the-scenes-lower-right-large.jpg');">
 										<a class="open-afmodal" href="#" data-modal-identifier="tile-2"><img class="tile-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
-										<img class="show-for-sr" alt="Tile Photo 3" src="./assets/images/photo-4.jpg">
+										<picture>
+											<source 
+												media="(max-width: 480px)"
+												srcset="./assets/images/behind-the-scenes-lower-right-small.jpg"
+											/>
+											<source 
+												media="(max-width: 1024px)" 
+												srcset="./assets/images/behind-the-scenes-lower-right-medium.jpg" 
+											/>
+											<source 
+												media="(min-width: 1025px)" 
+												srcset="./assets/images/behind-the-scenes-lower-right-large.jpg" 
+											/>
+											<img class="show-for-sr" alt="Tile Photo 3" src="./assets/images/behind-the-scenes-lower-right-large.jpg">
+										</picture>
 									</div>
 								</div>
 							</div>
