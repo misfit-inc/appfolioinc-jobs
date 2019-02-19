@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/misfit-inc/appfolio-engineering-microsite#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "foundation-sites": "^6.2.4",
+    "foundation-sites": "^6.5.3",
     "what-input": "^5.1.3"
   }
 }
