@@ -6899,6 +6899,8 @@ section p {
 
 .tile-container {
   height: 100%; }
+  .tile-container.owl-carousel {
+    display: block; }
 
 .tile-media {
   display: flex; }
@@ -6933,6 +6935,7 @@ section p {
   background-repeat: no-repeat;
   height: 28.95rem;
   margin-bottom: .8rem;
+  overflow: hidden;
   width: 25%; }
   @media only screen and (max-width: 40em) {
     .tiles.photos .tile {
@@ -6995,8 +6998,11 @@ section p {
     .tiles.photos .owl-carousel .owl-dots .owl-dot.active, .tiles.photos .owl-carousel .owl-dots .owl-dot:hover {
       background-color: rgba(0, 0, 0, 0.4); }
 
-.tiles.photos .owl-carousel .tile {
-  background-image: none !important; }
+@media only screen and (max-width: 768px) {
+  .tiles.photos .owl-carousel .tile {
+    background-size: contain; }
+    .tiles.photos .owl-carousel .tile img {
+      display: none; } }
 
 .tiles.photos .owl-carousel img {
   visibility: visible; }

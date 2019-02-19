@@ -185,6 +185,10 @@
 
 .tile-container {
 	height: 100%;
+
+	&.owl-carousel {
+		display: block;
+	}
 }
 
 .tile-media {

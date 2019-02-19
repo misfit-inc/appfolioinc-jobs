@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			setTimeout(function () {
 
-				if (window.innerWidth <= 639) {
+				if (window.innerWidth <= 768) {
 					$("#cards-container").owlCarousel({
 						autoHeight: true,
 						dots: true,
@@ -304,6 +304,8 @@ document.addEventListener("DOMContentLoaded", function () {
 					})
 						.parents('.tiles')
 						.addClass('slider-enabled');
+
+					active_slider = false;
 				} else {
 					$("#cards-container")
 						.owlCarousel('destroy');
@@ -325,8 +327,6 @@ document.addEventListener("DOMContentLoaded", function () {
 						});
 					}, 500);
 				}
-
-				active_slider = false;
 			}, 200);
 		}
 	}
