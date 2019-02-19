@@ -95,8 +95,14 @@
 									<h2>Why AppFolio</h2>
 								</div>
 							</div>
-							<div class="tile level-2 show-for-medium-up" style="background-image: url('./assets/images/photo-2.jpg');">
-								<img class="show-for-sr" alt="Tile Photo 2" src="./assets/images/photo-2.jpg">
+							<div class="tile level-2 show-for-medium-up">
+								<picture>
+									<source media="(max-width: 480px)" srcset="./assets/images/photo-2-small.jpg" />
+									<source media="(max-width: 1024px)" srcset="./assets/images/photo-2-medium.jpg" />
+									<source media="(min-width: 1025px)" srcset="./assets/images/photo-2-large.jpg" />
+									<source media="(min-width: 1440px)" srcset="./assets/images/photo-2-xl.jpg" />
+									<img class="show-for-sr" alt="Tile Photo 3" src="./assets/images/photo-2-large.jpg">
+								</picture>
 							</div>
 							<div class="tile level-3 column row large-12 medium-12">
 								<div class="column right-side large-6 medium-6 small-12">
@@ -109,18 +115,9 @@
 									<div class="tile flex" style="background-image: url('./assets/images/behind-the-scenes-lower-right-large.jpg');">
 										<a class="open-afmodal" href="#" data-modal-identifier="tile-2"><img class="tile-icon" alt="Tile Play Icon" src="./assets/images/icons/ico-play-translucent.png" aria-hidden="true"></a>
 										<picture>
-											<source 
-												media="(max-width: 480px)"
-												srcset="./assets/images/behind-the-scenes-lower-right-small.jpg"
-											/>
-											<source 
-												media="(max-width: 1024px)" 
-												srcset="./assets/images/behind-the-scenes-lower-right-medium.jpg" 
-											/>
-											<source 
-												media="(min-width: 1025px)" 
-												srcset="./assets/images/behind-the-scenes-lower-right-large.jpg" 
-											/>
+											<source media="(max-width: 480px)" srcset="./assets/images/behind-the-scenes-lower-right-small.jpg" />
+											<source media="(max-width: 1024px)" srcset="./assets/images/behind-the-scenes-lower-right-medium.jpg" />
+											<source media="(min-width: 1025px)" srcset="./assets/images/behind-the-scenes-lower-right-large.jpg" />
 											<img class="show-for-sr" alt="Tile Photo 3" src="./assets/images/behind-the-scenes-lower-right-large.jpg">
 										</picture>
 									</div>
