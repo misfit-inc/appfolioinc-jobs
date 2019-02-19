@@ -70,6 +70,14 @@
 		@media all and (-ms-high-contrast:none) {
 			padding-top: 6rem;
 		}
+
+		@media only screen and (min-width: 64.0625em) {
+			background-position: -243px -141px;
+		}
+
+		@media only screen and (min-width: 90.0625em) {
+			background-position: -243px -141px;
+		}
 	}
 
 	.stevie {
