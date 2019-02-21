@@ -26,7 +26,6 @@
 		.level-2 {
 			background-color: #ff0032;
 			height: 24rem;
-			margin-bottom: 1.3rem;
 
 			img {
 				margin-top: 3.5rem;
@@ -181,6 +180,38 @@
 					display: flex;
 					position: relative;
 				}
+			}
+		}
+	}
+
+	&.bottom-side {
+		.level-1 {
+			background-color: #009de6;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 6rem;
+			margin: 1.3rem 0;
+
+			p {
+				color: #fff;
+				font-size: 1.25rem;
+				font-weight: 600;
+				line-height: 1.2;
+				margin: 0;
+			}
+
+			a {
+				color: #fff;
+				font-weight: 600;
+				text-decoration: underline;
+			}
+
+			span {
+				color: #fff;
+				font-size: 1.25rem;
+				font-weight: 600;
+				white-space: nowrap;
 			}
 		}
 	}

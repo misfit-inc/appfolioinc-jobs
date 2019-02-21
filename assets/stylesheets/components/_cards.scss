@@ -113,7 +113,7 @@
 		a {
 			border-bottom: 1px solid $color-lighter-blue;
 			color: $color-lighter-blue;
-			font-size: rem-calc(21);
+			font-size: 1.3125rem;
 			font-weight: 300;
 			padding-bottom: .3rem;
 			text-transform: uppercase;
@@ -126,6 +126,14 @@
 				button {
 					background-color: transparent;
 					color: $color-lighter-blue;
+
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					background: transparent;
+					padding: 0;
+					border: 0;
+					border-radius: 0;
+					line-height: 1;
 				}
 			}
 		}

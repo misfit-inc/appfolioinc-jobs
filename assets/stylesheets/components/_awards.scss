@@ -21,19 +21,17 @@
 	}
 
 	span {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		background-image: url("https://learn.appfolio.com/inc/images/awards-sprite-2x-v5.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+		height: 120px;
+		margin: 30px 30px;
+		zoom: 0.7;
+		-moz-transform: scale(0.7);
 
 		@media only screen and (min-width: 90.0625em) {
 			margin-bottom: 1.5rem;
 		}
-
-		// awards logos IE11 fix
-		// @media all and (-ms-high-contrast:none) {
-		// 	margin-bottom: 0 !important;
-		// 	margin-top: 0 !important;
-		// }
 	}
 
 	.awards-container {
