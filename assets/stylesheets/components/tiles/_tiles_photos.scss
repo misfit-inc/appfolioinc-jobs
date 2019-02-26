@@ -65,4 +65,56 @@
 			background-position: top;
 		}
 	}
+
+	.owl-carousel {
+		.owl-item {
+			img {
+				width: auto;
+			}
+		}
+
+		.owl-dots {
+			text-align: center;
+			width: 100%;
+			margin-top: 2rem;
+
+			.owl-dot {
+				background-color: rgba(0, 0, 0, .2);
+				border-radius: 50%;
+				display: inline-block;
+				height: .6rem;
+				margin: 0 .2rem;
+				width: .6rem;
+
+				@include transition(background-color .4s ease);
+
+				&.active,
+				&:hover {
+					background-color: rgba(0, 0, 0, .4);
+				}
+			}
+		}
+
+		@media only screen and (min-width: 769px) {
+			.tile {
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			.tile {
+				background-size: contain;
+
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+
+		img {
+			visibility: visible;
+		}
+	}
 }
