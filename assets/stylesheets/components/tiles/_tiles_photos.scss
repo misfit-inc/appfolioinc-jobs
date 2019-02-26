@@ -1,14 +1,4 @@
 .tiles.photos {
-
-	&.slider-enabled {
-		opacity: 1;
-		top: auto;
-
-		.tile-container {
-			opacity: 1;
-		}
-	}
-
 	.section-title {
 		margin-bottom: 3rem;
 	}
@@ -25,37 +15,36 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		height: 28.95rem;
+		height: 19.3rem;
 		margin-bottom: .8rem;
-		overflow: hidden;
-		width: 25%;
+		width: 24%;
 
 		@media only screen and (max-width: 40em) {
-			height: auto;
+			height: 20rem;
 			width: 100%;
 		}
 
 		@media only screen and (min-width: 40.0625em) {
-			width: 100%;
+			width: 48%;
 		}
 
 		@media only screen and (min-width: 64.0625em) {
-			width: 49%;
+			width: 24%;
 		}
 
 		@media only screen and (min-width: 90.0625em) {
-			width: 24.6%;
+			width: 24%;
 		}
 
 		&.short {
-			height: 14.05rem;
+			height: 9.25rem;
 
 			@media only screen and (max-width: 40em) {
-				height: auto;
+				height: 20rem;
 			}
 
 			@media only screen and (min-width: 64.0625em) {
-				height: 14.05rem;
+				height: 9.25rem;
 			}
 		}
 
@@ -63,77 +52,17 @@
 			width: 49%;
 
 			@media only screen and (max-width: 40em) {
-				height: auto;
-				width: 100%;
-			}
-
-			@media only screen and (max-width: 768px) {
+				height: 20rem;
 				width: 100%;
 			}
 
 			@media only screen and (min-width: 64.0625em) {
 				width: 49%;
 			}
-
-			@media only screen and (max-width: 1024px) {
-				width: 100%;
-			}
 		}
 
 		&.background-top {
 			background-position: top;
-		}
-	}
-
-	.owl-carousel {
-		.owl-item {
-			img {
-				width: auto;
-			}
-		}
-
-		.owl-dots {
-			text-align: center;
-			width: 100%;
-			margin-top: 2rem;
-
-			.owl-dot {
-				background-color: rgba(0, 0, 0, .2);
-				border-radius: 50%;
-				display: inline-block;
-				height: .6rem;
-				margin: 0 .2rem;
-				width: .6rem;
-
-				@include transition(background-color .4s ease);
-
-				&.active,
-				&:hover {
-					background-color: rgba(0, 0, 0, .4);
-				}
-			}
-		}
-
-		@media only screen and (min-width: 769px) {
-			.tile {
-				img {
-					visibility: hidden;
-				}
-			}
-		}
-
-		@media only screen and (max-width: 768px) {
-			.tile {
-				background-size: contain;
-
-				img {
-					visibility: hidden;
-				}
-			}
-		}
-
-		img {
-			visibility: visible;
 		}
 	}
 }

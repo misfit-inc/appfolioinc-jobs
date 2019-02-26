@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								columnHeight: 20,
 							},
 						});
-					}, 500);
+					}, 2000);
 				}
 			}, 200);
 		}

@@ -28,59 +28,54 @@
 		margin: 30px 30px;
 		zoom: 0.7;
 		-moz-transform: scale(0.7);
-
-		@media only screen and (min-width: 90.0625em) {
-			margin-bottom: 1.5rem;
-		}
-	}
-
-	.awards-container {
-		column-count: 4;
-
-		@media only screen and (max-width: 40em) {
-			column-count: 1;
-		}
-
-		@media only screen and (min-width: 40.0625em) {
-			column-count: 2;
-		}
-
-		@media only screen and (min-width: 64.0625em) {
-			column-count: 3;
-		}
-
-		@media only screen and (min-width: 90.0625em) {
-			column-count: 4;
-		}
 	}
 
 	.glassdoor {
-		margin-bottom: 2rem;
+		background-position: 0px 0px;
+		width: 304px;
 	}
 
 	.pacificoast {
-		margin: 1rem auto 3rem;
+		background-position: -912px 0px;
+		width: 304px;
+	}
+
+	.itworld {
+		background-position: -2px -123px;
+		width: 118px;
+		height: 194px;
 	}
 
 	.southcoast {
-		margin: 2rem auto;
-
-		@media all and (-ms-high-contrast:none) {
-			padding-top: 6rem;
-		}
-
-		@media only screen and (min-width: 64.0625em) {
-			background-position: -243px -141px;
-		}
-
-		@media only screen and (min-width: 90.0625em) {
-			background-position: -243px -141px;
-		}
+		background-position: -119px -121px;
+		width: 308px;
 	}
 
 	.stevie {
 		background-position: -539px -152px;
 		width: 113px;
 		height: 130px;
+	}
+
+	.cloud {
+		background-position: -304px 0px;
+		width: 304px;
+	}
+
+	.fast500 {
+		background-position: -609px 0px;
+		width: 304px;
+	}
+
+	.stevie {
+		background-position: -427px -121px;
+		width: 141px;
+		height: 196px;
+	}
+
+	.codie {
+		background-position: -647px -126px;
+		width: 144px;
+		height: 176px;
 	}
 }

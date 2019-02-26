@@ -32,6 +32,10 @@ body {
 
 .x-content {
 	&.wide {
-		max-width: 72.5rem;
+		max-width: 75rem;
 	}
+}
+
+.row {
+	max-width: 75rem;
 }

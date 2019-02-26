@@ -110,14 +110,19 @@
 
 	.event-item {
 		background-color: $color-blue;
-		display: flex;
-		height: 190px;
-		padding: 1.5rem;
+		position: relative;
 		width: 32%;
 
 		@media only screen and (max-width: 40em) {
 			width: 100%;
 			margin-bottom: 1rem;
+		}
+
+		&:hover {
+			h3, 
+			p {
+				text-decoration: underline;
+			}
 		}
 
 		&-photo-container {
@@ -127,6 +132,15 @@
 
 		&-content-container {
 			padding: 1.5rem;
+		}
+
+		&-link {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 2;
 		}
 
 		h3,
