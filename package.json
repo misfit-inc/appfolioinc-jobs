@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "foundation-sites": "^6.5.3",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.5",
     "what-input": "^5.1.3"
   }
 }
