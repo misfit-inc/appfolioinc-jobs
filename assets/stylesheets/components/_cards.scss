@@ -120,21 +120,21 @@
 
 			@include transition(border-bottom-color .3s ease);
 
+			button {
+				background-color: transparent;
+				border: 0;
+				border-radius: 0;
+				color: $color-lighter-blue;
+				font-size: 1.3125rem;
+				font-weight: 300;
+				line-height: 1;
+				padding: 0;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+			}
+
 			&:hover {
 				border-bottom-color: transparent;
-
-				button {
-					background-color: transparent;
-					color: $color-lighter-blue;
-
-					-webkit-appearance: none;
-					-moz-appearance: none;
-					background: transparent;
-					padding: 0;
-					border: 0;
-					border-radius: 0;
-					line-height: 1;
-				}
 			}
 		}
 	}
@@ -149,6 +149,14 @@
 				margin-bottom: 0;
 				opacity: 1;
 				top: auto;
+
+				@media only screen and (max-width: 40em) {
+					margin: 0 auto;
+				}
+
+				@media only screen and (min-width: 40.0625em) {
+					margin: 0 auto;
+				}
 			}
 		}
 
