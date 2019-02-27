@@ -122,6 +122,21 @@
 				@include transition(opacity .4s ease);
 			}
 		}
+
+		.mapimage-title {
+			padding-top: 3rem;
+			color: #ffffff;
+			text-align: center;
+			font-size: 1.8rem;
+			line-height: 1.1;
+			font-weight: 700;
+
+			span {
+				font-size: 1.2rem;
+				font-weight: 400;
+				color: #ffffff;
+			}
+		}
 	}
 
 	.map-pins {
