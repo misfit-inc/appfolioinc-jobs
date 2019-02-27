@@ -258,7 +258,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			$('.map-detail.' + hover_data).toggleClass('active');
 		});
 	}
+});
 
+(function ($) {
 	let active_slider = false;
 	const mobileSliderLoad = function () {
 		if (active_slider === false) {
@@ -267,6 +269,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			setTimeout(function () {
 
 				if (window.innerWidth <= 768) {
+
+					if($('.tiles.photos .tile-container').data('isotope')) {
+						$('.tiles.photos .tile-container').isotope('destroy');
+					}
+
 					$("#cards-container").owlCarousel({
 						autoHeight: true,
 						dots: true,
@@ -304,16 +311,15 @@ document.addEventListener("DOMContentLoaded", function () {
 					})
 						.parents('.tiles')
 						.addClass('slider-enabled');
-
-					active_slider = false;
 				} else {
 					$("#cards-container")
 						.owlCarousel('destroy');
+
 					$("#tile-container")
 						.owlCarousel('destroy')
 						.parents('.tiles')
 						.removeClass('slider-enabled');
-					
+
 					// This controls the photo masonry at the bottom of the page
 					// Set the timeout to provide Isotope time to adjust to page load time
 					// https://isotope.metafizzy.co/docs
@@ -325,14 +331,15 @@ document.addEventListener("DOMContentLoaded", function () {
 								columnHeight: 20,
 							},
 						});
-					}, 2000);
+					}, 500);
 				}
+
+				active_slider = false;
 			}, 200);
 		}
 	}
 
-	document.addEventListener("scroll", mobileSliderLoad);
+	mobileSliderLoad();
 	window.addEventListener("resize", mobileSliderLoad);
 	window.addEventListener("orientationchange", mobileSliderLoad);
-
-});
+})(jQuery)

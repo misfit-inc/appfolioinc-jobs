@@ -21,6 +21,7 @@
 
 		@media only screen and (max-width: 40em) {
 			height: 20rem;
+			margin: 0 auto;
 			width: 100%;
 		}
 
@@ -28,8 +29,14 @@
 			width: 48%;
 		}
 
+		@media only screen and (max-width: 768px) {
+			margin: 0 auto;
+		}
+
 		@media only screen and (min-width: 64.0625em) {
 			width: 24%;
+			margin: 0 0 .8rem;
+			
 		}
 
 		@media only screen and (min-width: 90.0625em) {
@@ -105,7 +112,7 @@
 
 		@media only screen and (max-width: 768px) {
 			.tile {
-				background-size: contain;
+				background-size: cover;
 
 				img {
 					visibility: hidden;
