@@ -261,8 +261,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 (function ($) {
-	let active_slider = false;
-	const mobileSliderLoad = function () {
+	var active_slider = false;
+	var mobileSliderLoad = function () {
 		if (active_slider === false) {
 			active_slider = true;
 
