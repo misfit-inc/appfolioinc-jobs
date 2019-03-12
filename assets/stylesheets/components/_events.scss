@@ -82,9 +82,10 @@
 			font-size: rem-calc(25px);
 			font-weight: 300;
 			font-style: italic;
-			line-height: 2;
+			line-height: 1;
 
 			span {
+				display: inline-block;
 				font-size: 1.15rem;
 				font-weight: 300;
 			}
