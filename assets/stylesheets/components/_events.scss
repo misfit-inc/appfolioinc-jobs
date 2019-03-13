@@ -188,7 +188,6 @@
 			.event-item-photo-container {
 				background-image: url('../../../assets/images/event-1-xl.jpg');
 
-
 				@media only screen and (max-width: 40em) {
 					background-image: url('../../../assets/images/event-1-large.jpg');
 				}
@@ -205,6 +204,24 @@
 
 		&:nth-child(2) {
 			.event-item-photo-container {
+				background-image: url('../../../assets/images/event-3-xl.jpg');
+
+				@media only screen and (max-width: 40em) {
+					background-image: url('../../../assets/images/event-3-large.jpg');
+				}
+
+				@media only screen and (min-width: 64.0625em) {
+					background-image: url('../../../assets/images/event-3-large.jpg');
+				}
+
+				@media only screen and (min-width: 90.0625em) {
+					background-image: url('../../../assets/images/event-3-xl.jpg');
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			.event-item-photo-container {
 				background-image: url('../../../assets/images/event-2-xl.jpg');
 
 				@media only screen and (max-width: 40em) {
@@ -217,25 +234,6 @@
 
 				@media only screen and (min-width: 90.0625em) {
 					background-image: url('../../../assets/images/event-2-xl.jpg');
-				}
-			}
-		}
-
-		&:nth-child(3) {
-			.event-item-photo-container {
-				background-image: url('../../../assets/images/event-3-xl.jpg');
-
-
-				@media only screen and (max-width: 40em) {
-					background-image: url('../../../assets/images/event-3-large.jpg');
-				}
-
-				@media only screen and (min-width: 64.0625em) {
-					background-image: url('../../../assets/images/event-3-large.jpg');
-				}
-
-				@media only screen and (min-width: 90.0625em) {
-					background-image: url('../../../assets/images/event-3-xl.jpg');
 				}
 			}
 		}
