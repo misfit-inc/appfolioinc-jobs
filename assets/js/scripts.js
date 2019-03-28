@@ -150,7 +150,7 @@ var happiness_step_1_animation = lottie.loadAnimation(happiness_step_1_params),
 
 // jQuery, if it exists will be passed to the function. 
 // $ is the name that variable will take in the scope of the function
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (e) {
 
 	$("#owl-cards").owlCarousel({
 		center: false,
