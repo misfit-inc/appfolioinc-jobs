@@ -242,6 +242,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		$('#' + modal_identifier).fadeIn(300);
 	});
 
+	$('.close-af-modal').click(function () {
+		$('.afmodal').fadeOut(300);
+	});
+
+	if (e.keyCode === 27) $(".afmodal").fadeOut();
+
 	// This controls the hover trigger for the map pins
 	// This is also activated depending on the window screen width
 	if ($(window).width() > 913) {
